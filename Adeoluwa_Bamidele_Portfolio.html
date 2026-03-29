@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="robots" content="noodp"/>
+<!-- email-decode: off -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Adeoluwa Bamidele | Business Analyst & Product Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bg:#eef2f7; --surface:#ffffff; --surface2:#e2e8f0;
+  --border:rgba(0,0,0,0.09); --border2:rgba(0,0,0,0.15);
+  --gold:#0d7377; --gold2:#14a085; --gold-light:rgba(13,115,119,0.06); --gold-dim:rgba(13,115,119,0.08);
+  --white:#fff; --ink:#0d0d12; --text:#2a2a35; --muted:#6b6b7a;
+  --green:#1a9e6a; --red:#d63b3b; --blue:#2b5fd4;
+  --pather:#2b5fd4; --venture:#1a9e6a; --extreme:#d63b3b;
+  --radius:3px;
+  --ease:cubic-bezier(0.4,0,0.2,1);
+  --shadow:0 2px 16px rgba(0,0,0,0.06);
+  --shadow-lg:0 12px 48px rgba(0,0,0,0.12);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden;}
+::-webkit-scrollbar{width:3px;}
+::-webkit-scrollbar-thumb{background:var(--gold);}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:1rem 5rem;background:rgba(10,10,15,0.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);transition:padding 0.3s var(--ease);}
+nav.scrolled{padding:0.7rem 5rem;}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;background:linear-gradient(135deg,#0d7377,#14a085);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.nav-links{display:flex;gap:2rem;list-style:none;align-items:center;}
+.nav-links a{font-size:0.75rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color 0.2s;position:relative;}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--gold);transition:width 0.3s var(--ease);}
+.nav-links a:hover{color:#0d7377;}
+.nav-links a:hover::after{width:100%;}
+.nav-cta{padding:0.5rem 1.4rem;background:linear-gradient(135deg,#0d7377,#14a085);color:#000;font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:all 0.3s;border-radius:var(--radius);}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(13,115,119,0.3);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.hamburger span{display:block;width:22px;height:2px;background:var(--text);transition:all 0.3s;}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:9rem 5rem 5rem;position:relative;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 900px 700px at 65% 35%,rgba(13,115,119,0.07),transparent 65%),radial-gradient(ellipse 500px 400px at 15% 75%,rgba(91,138,255,0.04),transparent 60%);}
+.hero-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,0.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.018) 1px,transparent 1px);background-size:60px 60px;}
+.hero-tag{display:inline-flex;align-items:center;gap:0.6rem;padding:0.38rem 1rem;border:1px solid rgba(13,115,119,0.3);background:rgba(13,115,119,0.07);font-size:0.7rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:#0d7377;margin-bottom:2rem;width:fit-content;opacity:0;animation:fadeUp 0.7s var(--ease) 0.1s forwards;}
+.hero-tag-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:blink 2s infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.2}}
+h1{font-family:'Playfair Display',serif;font-size:clamp(3.2rem,7vw,7rem);font-weight:900;line-height:0.95;letter-spacing:-0.03em;margin-bottom:1.5rem;opacity:0;animation:fadeUp 0.8s var(--ease) 0.25s forwards;}
+h1 .line1{display:block;color:var(--white);}
+h1 .line2{display:block;background:linear-gradient(135deg,#0d7377,#14a085);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero-sub{font-size:1.05rem;color:var(--muted);max-width:540px;line-height:1.85;margin-bottom:2.8rem;opacity:0;animation:fadeUp 0.8s var(--ease) 0.4s forwards;}
+.hero-sub strong{color:var(--text);font-weight:500;}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:4.5rem;opacity:0;animation:fadeUp 0.8s var(--ease) 0.55s forwards;}
+.btn-gold{padding:0.9rem 2.2rem;background:linear-gradient(135deg,#0d7377,#14a085);color:#000;font-weight:700;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:all 0.3s;border:none;cursor:pointer;border-radius:var(--radius);}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(13,115,119,0.35);}
+.btn-ghost{padding:0.9rem 2.2rem;background:transparent;color:var(--text);font-weight:500;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;border:1px solid var(--border2);transition:all 0.3s;border-radius:var(--radius);}
+.btn-ghost:hover{border-color:#0d7377;color:#0d7377;transform:translateY(-2px);}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);max-width:860px;opacity:0;animation:fadeUp 0.8s var(--ease) 0.7s forwards;}
+.hstat{background:var(--surface);padding:1.8rem 1.2rem;text-align:center;transition:background 0.3s;}
+.hstat:hover{background:var(--surface2);}
+.hstat-n{font-family:'Playfair Display',serif;font-size:2.6rem;font-weight:900;background:linear-gradient(135deg,#0d7377,#14a085);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1;}
+.hstat-l{font-size:0.68rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase;margin-top:0.4rem;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── SECTION ── */
+section{padding:7rem 5rem;}
+.sec-label{font-size:0.68rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:#0d7377;display:flex;align-items:center;gap:0.8rem;margin-bottom:0.8rem;}
+.sec-label::before{content:'';width:20px;height:1px;background:var(--gold);}
+h2{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,4vw,2.8rem);font-weight:900;color:var(--white);line-height:1.05;letter-spacing:-0.02em;margin-bottom:0.8rem;}
+.sec-intro{color:var(--muted);font-size:0.97rem;max-width:580px;line-height:1.85;margin-bottom:3.5rem;}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--border) 20%,var(--border) 80%,transparent);margin:0 5rem;}
+
+
+/* ── COLLAPSIBLE ACHIEVEMENTS ── */
+.ach-toggle-btn{display:flex;align-items:center;gap:0.6rem;background:none;border:none;cursor:pointer;font-family:'Outfit',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0;transition:color 0.2s;}
+.ach-toggle-btn.pather-toggle{color:#2b5fd4;}
+.ach-toggle-btn.venture-toggle{color:#1a9e6a;}
+.ach-toggle-btn.extreme-toggle{color:#d63b3b;}
+.ach-toggle-icon{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.85rem;font-weight:700;transition:transform 0.35s ease,background 0.2s;border:1.5px solid currentColor;}
+.ach-toggle-btn.open .ach-toggle-icon{transform:rotate(45deg);}
+.ach-collapsible{overflow:hidden;max-height:0;transition:max-height 0.45s cubic-bezier(0.4,0,0.2,1),opacity 0.35s ease;opacity:0;}
+.ach-collapsible.open{max-height:1200px;opacity:1;}
+.ach-company-header{cursor:pointer;user-select:none;}
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity 0.75s var(--ease),transform 0.75s var(--ease);}
+.reveal.visible{opacity:1;transform:translateY(0);}
+.reveal-d1{transition-delay:0.1s;} .reveal-d2{transition-delay:0.2s;} .reveal-d3{transition-delay:0.3s;}
+
+/* ── ABOUT ── */
+#about{background:var(--surface);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+.about-bio p{font-size:0.97rem;color:var(--muted);line-height:1.9;margin-bottom:1.2rem;}
+.about-bio p strong{color:var(--text);font-weight:500;}
+.about-meta{font-size:0.83rem;color:rgba(255,255,255,0.35);margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:1.2rem;}
+.about-meta span{display:flex;align-items:center;gap:0.4rem;}
+.pather-card{background:var(--bg);border:1px solid var(--border);padding:2.2rem;}
+.pather-head{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border);}
+.pather-icon{width:42px;height:42px;background:linear-gradient(135deg,#0d7377,#14a085);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:900;color:#000;font-size:1.1rem;flex-shrink:0;}
+.pather-nm{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--white);}
+.pather-tg{font-size:0.73rem;color:var(--muted);}
+.pather-desc{font-size:0.88rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem;}
+.pills{display:flex;flex-wrap:wrap;gap:0.45rem;}
+.pill{padding:0.28rem 0.85rem;font-size:0.7rem;font-weight:500;border:1px solid var(--border);color:var(--muted);transition:all 0.2s;cursor:default;}
+.pill:hover,.pill.on{border-color:#0d7377;color:#0d7377;background:var(--gold-dim);}
+.edu-card{background:var(--bg);border:1px solid var(--border);padding:1.6rem 2rem;margin-top:1.2rem;}
+.edu-degree{font-size:0.95rem;color:var(--text);font-weight:500;}
+.edu-school{font-size:0.8rem;color:var(--muted);margin-top:0.25rem;}
+
+/* ── ACHIEVEMENTS ── */
+#achievements{background:var(--bg);}
+.ach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;}
+.ach-card{background:var(--surface);border:1px solid var(--border);padding:2.2rem 1.8rem;position:relative;overflow:hidden;transition:all 0.4s var(--ease);cursor:default;}
+.ach-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:scaleX(0);transform-origin:left;transition:transform 0.4s var(--ease);}
+.ach-card:hover{border-color:rgba(13,115,119,0.25);transform:translateY(-5px);box-shadow:0 24px 60px rgba(0,0,0,0.5);}
+.ach-card:hover::after{transform:scaleX(1);}
+.ach-n{font-family:'Playfair Display',serif;font-size:3.8rem;font-weight:900;background:linear-gradient(135deg,#0d7377,#14a085);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1;margin-bottom:0.7rem;}
+.ach-desc{font-size:0.87rem;color:var(--muted);line-height:1.7;margin-bottom:0.9rem;}
+.ach-src{font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(13,115,119,0.45);padding-top:0.8rem;border-top:1px solid var(--border);}
+
+/* ── SKILLS ── */
+#skills{background:var(--surface);}
+.skills-cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3rem;}
+.sk-title{font-size:0.68rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:#0d7377;margin-bottom:1.2rem;padding-bottom:0.7rem;border-bottom:1px solid var(--border);}
+.sk-list{display:flex;flex-direction:column;gap:0;}
+.sk-item{display:flex;align-items:center;gap:0.7rem;font-size:0.86rem;color:var(--muted);padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.03);transition:color 0.2s,padding-left 0.2s;}
+.sk-item:hover{color:var(--text);padding-left:4px;}
+.sk-item::before{content:'';width:3px;height:3px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+.sk-item.hl{color:var(--text);font-weight:500;}
+.tools-wrap{display:flex;flex-wrap:wrap;gap:0.45rem;margin-top:1rem;}
+.tool{padding:0.3rem 0.85rem;font-size:0.72rem;border:1px solid var(--border);color:var(--muted);transition:all 0.2s;cursor:default;}
+.tool:hover{border-color:#0d7377;color:#0d7377;background:var(--gold-dim);}
+.cert-list{display:flex;flex-direction:column;gap:0.7rem;}
+.cert{padding:0.85rem 1rem;background:var(--bg);border:1px solid var(--border);transition:border-color 0.2s;}
+.cert:hover{border-color:rgba(13,115,119,0.35);}
+.cert-nm{font-size:0.84rem;color:var(--text);font-weight:500;}
+.cert-yr{font-size:0.68rem;color:#0d7377;margin-top:0.2rem;}
+
+/* ── CASE STUDIES (TABBED) ── */
+#case-studies{background:var(--bg);}
+.tab-nav{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:3rem;overflow-x:auto;}
+.tab-btn{padding:1rem 2rem;font-size:0.78rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);background:transparent;border:none;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.3s;white-space:nowrap;}
+.tab-btn:hover{color:var(--text);}
+.tab-btn.active{color:#0d7377;border-bottom-color:#0d7377;}
+.tab-panel{display:none;}
+.tab-panel.active{display:block;animation:fadeIn 0.45s var(--ease);}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.cs-header{background:var(--surface);border:1px solid var(--border);padding:3rem;margin-bottom:1.5rem;}
+.cs-co{font-size:0.7rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:#0d7377;margin-bottom:0.5rem;}
+.cs-title{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:900;color:var(--ink);margin-bottom:1rem;}
+.cs-chips{display:flex;gap:0.4rem;flex-wrap:wrap;}
+.chip{padding:0.22rem 0.75rem;font-size:0.67rem;border:1px solid var(--border);color:var(--muted);letter-spacing:0.04em;}
+.cs-cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem;margin-bottom:2rem;}
+.cs-col-lbl{font-size:0.67rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:#0d7377;margin-bottom:0.7rem;}
+.cs-col-txt{font-size:0.88rem;color:var(--muted);line-height:1.8;}
+.cs-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-bottom:2rem;}
+.cs-metric{background:var(--surface);padding:1.8rem;text-align:center;}
+.cs-m-n{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;background:linear-gradient(135deg,#0d7377,#14a085);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1;}
+.cs-m-l{font-size:0.72rem;color:var(--muted);margin-top:0.4rem;}
+
+/* process flow inside case study */
+.flow-box-wrap{background:var(--surface);border:1px solid var(--border);padding:2.5rem;overflow-x:auto;}
+.flow-lbl{font-size:0.67rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:#0d7377;margin-bottom:1.5rem;}
+.flow-row{display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin-bottom:0.8rem;}
+.fb{padding:0.42rem 0.9rem;font-size:0.72rem;color:var(--text);border:1px solid var(--border);background:var(--bg);white-space:nowrap;transition:all 0.2s;}
+.fb:hover{border-color:#0d7377;color:#0d7377;}
+.fd{padding:0.42rem 0.85rem;font-size:0.7rem;color:#14a085;border:1px solid rgba(13,115,119,0.4);background:var(--gold-dim);font-weight:600;white-space:nowrap;}
+.fa{color:var(--muted);font-size:0.85rem;padding:0 2px;}
+.fy{font-size:0.6rem;color:var(--green);font-weight:700;padding:0 1px;}
+.fn{font-size:0.6rem;color:var(--red);font-weight:700;padding:0 1px;}
+.fok{border-color:rgba(62,207,142,0.4)!important;color:var(--green)!important;}
+.flow-note{margin-top:1.5rem;padding:0.9rem 1.4rem;background:rgba(62,207,142,0.05);border:1px solid rgba(62,207,142,0.15);font-size:0.78rem;color:rgba(62,207,142,0.8);line-height:1.6;}
+
+/* ── PRODUCT ── */
+#product{background:var(--surface);}
+.product-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;}
+.pricing-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;}
+.pc{background:var(--bg);border:1px solid var(--border);padding:1.8rem 1.4rem;transition:all 0.3s;position:relative;}
+.pc.feat{border-color:rgba(13,115,119,0.35);background:linear-gradient(160deg,rgba(13,115,119,0.05),var(--bg));}
+.pc:hover{transform:translateY(-4px);border-color:rgba(13,115,119,0.3);}
+.pc-tier{font-size:0.67rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-bottom:0.7rem;}
+.pc-price{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--white);margin-bottom:0.2rem;}
+.pc-price span{font-size:0.8rem;font-weight:400;color:var(--muted);}
+.pc-comm{font-size:0.75rem;color:#0d7377;margin-bottom:1rem;}
+.pc-feats{list-style:none;display:flex;flex-direction:column;gap:0.4rem;}
+.pc-feats li{font-size:0.75rem;color:var(--muted);display:flex;gap:0.5rem;}
+.pc-feats li::before{content:'✓';color:var(--green);flex-shrink:0;}
+.soon{position:absolute;top:0.8rem;right:0.8rem;font-size:0.58rem;padding:0.18rem 0.55rem;background:rgba(13,115,119,0.12);border:1px solid rgba(13,115,119,0.3);color:#0d7377;letter-spacing:0.1em;text-transform:uppercase;}
+.roadmap-list{display:flex;flex-direction:column;gap:0;}
+.rm-item{display:grid;grid-template-columns:110px 1fr auto;gap:1.2rem;align-items:center;padding:1rem 0;border-bottom:1px solid var(--border);transition:background 0.2s;}
+.rm-item:last-child{border-bottom:none;}
+.rm-date{font-size:0.7rem;color:var(--muted);}
+.rm-name{font-size:0.87rem;color:var(--text);font-weight:500;}
+.rm-s{font-size:0.62rem;padding:0.22rem 0.65rem;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;white-space:nowrap;}
+.s-done{background:rgba(62,207,142,0.09);color:var(--green);border:1px solid rgba(62,207,142,0.2);}
+.s-prog{background:rgba(13,115,119,0.09);color:#0d7377;border:1px solid rgba(13,115,119,0.2);}
+.s-next{background:rgba(255,255,255,0.04);color:var(--muted);border:1px solid var(--border);}
+
+/* ── ARTEFACTS ── */
+#artefacts{background:var(--bg);}
+.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.art-card{background:var(--surface);border:1px solid var(--border);overflow:hidden;transition:all 0.4s var(--ease);cursor:pointer;position:relative;}
+.art-card:hover{transform:translateY(-6px);box-shadow:0 28px 70px rgba(0,0,0,0.55);border-color:rgba(13,115,119,0.25);}
+.art-img-wrap{width:100%;height:200px;overflow:hidden;position:relative;background:var(--surface2);}
+.art-img-wrap svg{width:100%;height:100%;}
+.art-overlay{position:absolute;inset:0;background:rgba(10,10,15,0.0);display:flex;align-items:center;justify-content:center;opacity:0;transition:all 0.35s var(--ease);}
+.art-card:hover .art-overlay{opacity:1;background:rgba(10,10,15,0.55);}
+.art-expand{padding:0.5rem 1.2rem;background:var(--gold);color:#000;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;transform:translateY(8px);transition:transform 0.35s var(--ease);}
+.art-card:hover .art-expand{transform:translateY(0);}
+.art-body{padding:1.8rem 1.6rem;}
+.art-icon-row{display:flex;align-items:center;gap:0.7rem;margin-bottom:0.7rem;}
+.art-icon{font-size:1.4rem;}
+.art-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--white);}
+.art-desc{font-size:0.82rem;color:var(--muted);line-height:1.7;}
+.art-tag{display:inline-block;margin-top:0.9rem;font-size:0.62rem;padding:0.18rem 0.65rem;border:1px solid rgba(13,115,119,0.3);color:#0d7377;letter-spacing:0.08em;text-transform:uppercase;}
+
+/* ── LIGHTBOX ── */
+.lightbox{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0);display:flex;align-items:center;justify-content:center;padding:2rem;pointer-events:none;transition:background 0.35s var(--ease);}
+.lightbox.open{background:rgba(0,0,0,0.88);pointer-events:all;}
+.lb-inner{background:var(--surface);border:1px solid var(--border);max-width:900px;width:100%;max-height:90vh;overflow:hidden;transform:scale(0.92) translateY(20px);opacity:0;transition:all 0.4s var(--ease);}
+.lightbox.open .lb-inner{transform:scale(1) translateY(0);opacity:1;}
+.lb-header{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 1.8rem;border-bottom:1px solid var(--border);}
+.lb-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--white);}
+.lb-close{width:32px;height:32px;border:1px solid var(--border);background:transparent;color:var(--muted);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
+.lb-close:hover{border-color:#0d7377;color:#0d7377;}
+.lb-body{padding:2rem;overflow-y:auto;max-height:calc(90vh - 80px);}
+.lb-body svg,.lb-body img{width:100%;height:auto;display:block;}
+
+/* ── CONTACT ── */
+#contact{background:var(--surface);text-align:center;}
+.contact-inner{max-width:580px;margin:0 auto;}
+.contact-links{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:2.5rem;}
+.cl{display:flex;align-items:center;gap:0.75rem;padding:0.9rem 1.8rem;border:1px solid var(--border);color:var(--text);text-decoration:none;font-size:0.83rem;transition:all 0.3s;}
+.cl:hover{border-color:#0d7377;color:#0d7377;transform:translateY(-2px);}
+
+/* ── FOOTER ── */
+footer{background:var(--bg);border-top:1px solid var(--border);padding:1.8rem 5rem;display:flex;justify-content:space-between;align-items:center;}
+.fc{font-size:0.75rem;color:var(--muted);}
+.fl{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;background:linear-gradient(135deg,#0d7377,#14a085);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+
+/* ── MOBILE ── */
+@media(max-width:900px){
+  nav{padding:1rem 1.5rem;}
+  nav.scrolled{padding:0.7rem 1.5rem;}
+  .nav-links{display:none;flex-direction:column;position:fixed;top:60px;left:0;right:0;background:rgba(10,10,15,0.97);padding:2rem 1.5rem;border-bottom:1px solid var(--border);gap:1.2rem;}
+  .nav-links.open{display:flex;}
+  .hamburger{display:flex;}
+  .hero{padding:7rem 1.5rem 3.5rem;}
+  .hero-stats{grid-template-columns:repeat(2,1fr);}
+  section{padding:4.5rem 1.5rem;}
+  .divider{margin:0 1.5rem;}
+  .about-grid{grid-template-columns:1fr;gap:2.5rem;}
+  .ach-grid{grid-template-columns:1fr 1fr;}
+  .skills-cols{grid-template-columns:1fr;}
+  .cs-cols{grid-template-columns:1fr;}
+  .cs-metrics{grid-template-columns:1fr 1fr;}
+  .product-grid{grid-template-columns:1fr;gap:3rem;}
+  .pricing-cards{grid-template-columns:1fr;}
+  .art-grid{grid-template-columns:1fr 1fr;}
+  .rm-item{grid-template-columns:1fr auto;}
+  .rm-date{display:none;}
+  footer{flex-direction:column;gap:0.8rem;text-align:center;padding:1.5rem;}
+  .tab-btn{padding:0.8rem 1.2rem;font-size:0.7rem;}
+}
+@media(max-width:540px){
+  h1{font-size:2.8rem;}
+  .ach-grid{grid-template-columns:1fr;}
+  .art-grid{grid-template-columns:1fr;}
+  .cs-metrics{grid-template-columns:1fr;}
+  .hero-stats{grid-template-columns:1fr 1fr;}
+}
+
+/* LIGHT THEME */
+body{background:var(--bg);color:var(--text);}
+h2{color:var(--ink);}
+.hero{background:#0d0d12;}
+h1 .line1{color:#fff;}
+.hero-sub{color:rgba(255,255,255,0.55);}
+.hero-sub strong{color:rgba(255,255,255,0.9);}
+.hstat{background:rgba(255,255,255,0.04);}
+.hstat:hover{background:rgba(255,255,255,0.08);}
+.hstat-l{color:rgba(255,255,255,0.4);}
+.hero-stats{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08);}
+.btn-ghost{border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.8);}
+.btn-ghost:hover{border-color:#14a085;color:#14a085;}
+nav{background:#0d0d12;border-bottom-color:rgba(255,255,255,0.07);}
+.nav-logo{background:linear-gradient(135deg,#14a085,#20c997);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.nav-links a{color:rgba(255,255,255,0.55);}
+.nav-links a:hover{color:#fff;}
+.nav-links{background:#0d0d12;}
+.hamburger span{background:rgba(255,255,255,0.7);}
+#contact{background:#0d0d12;}
+#contact h2{color:#fff;}
+#contact .sec-label{color:#14a085;}
+#contact .sec-label::before{background:#14a085;}
+#contact .sec-intro{color:rgba(255,255,255,0.5);}
+.cl{border-color:rgba(255,255,255,0.12);color:rgba(255,255,255,0.7);}
+.cl:hover{border-color:#14a085;color:#14a085;}
+footer{background:#0d0d12;border-top-color:rgba(255,255,255,0.06);}
+.fc{color:rgba(255,255,255,0.3);}
+.divider{background:linear-gradient(90deg,transparent,rgba(0,0,0,0.08) 20%,rgba(0,0,0,0.08) 80%,transparent);}
+.about-bio p{color:var(--muted);}
+.about-bio p strong{color:var(--ink);font-weight:600;}
+.pather-nm{color:var(--ink);}
+.pather-tg,.pather-desc{color:var(--muted);}
+.pather-card{background:var(--bg);box-shadow:var(--shadow);}
+.edu-degree{color:var(--ink);font-weight:600;}
+.edu-school{color:var(--muted);}
+.ach-card{background:var(--surface);box-shadow:var(--shadow);}
+.ach-card:hover{box-shadow:var(--shadow-lg);}
+.ach-n{background:linear-gradient(135deg,#0d7377,#14a085);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.ach-desc{color:var(--muted);}
+.ach-src{color:var(--muted);border-top-color:var(--border);}
+.sk-item{border-bottom-color:rgba(0,0,0,0.04);color:var(--muted);}
+.sk-item:hover{color:var(--ink);}
+.sk-item.hl{color:var(--ink);font-weight:600;}
+.sk-title{color:#0d7377;border-bottom-color:var(--border);}
+.cert{background:var(--bg);}
+.cert-nm{color:var(--ink);}
+.tab-btn{color:var(--muted);}
+.tab-btn:hover{color:var(--ink);}
+.tab-btn.active{color:#0d7377;border-bottom-color:#0d7377;}
+.cs-header{background:var(--surface);box-shadow:var(--shadow);}
+.cs-col-lbl{color:#0d7377;}
+.cs-col-txt{color:var(--muted);}
+.cs-metric{background:var(--bg);}
+.cs-m-n{background:linear-gradient(135deg,#0d7377,#14a085);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.cs-m-l{color:var(--muted);}
+.flow-box-wrap{background:var(--bg);}
+.fb{color:var(--text);background:var(--surface);border-color:var(--border);}
+.fb:hover{border-color:#14a085;color:#0d7377;}
+.fd{color:#0d7377;background:var(--gold-light);border-color:rgba(13,115,119,0.35);}
+.fok{border-color:rgba(26,158,106,0.4)!important;color:var(--green)!important;background:rgba(26,158,106,0.07)!important;}
+.fa{color:var(--muted);}
+.flow-note{background:rgba(26,158,106,0.05);border-color:rgba(26,158,106,0.18);color:var(--green);}
+.pc{background:var(--bg);}
+.pc-price{color:var(--ink);}
+.pc-tier,.rm-date{color:var(--muted);}
+.rm-name{color:var(--ink);}
+.art-card{background:var(--surface);box-shadow:var(--shadow);}
+.art-card:hover{box-shadow:var(--shadow-lg);}
+.art-title{color:var(--ink);}
+.art-desc{color:var(--muted);}
+.lb-inner{background:var(--surface);box-shadow:0 32px 80px rgba(0,0,0,0.2);}
+.lb-header{background:var(--bg);}
+.lb-title{color:var(--ink);}
+.lb-body p{color:var(--muted);}
+.chip{background:var(--bg);color:var(--muted);border-radius:100px;}
+.pill{border-radius:100px;}
+.tool{background:var(--bg);border-radius:100px;}
+.tool:hover{border-color:#14a085;color:#0d7377;background:var(--gold-light);}
+.rm-s{border-radius:100px;}
+.s-done{background:rgba(26,158,106,0.1);color:var(--green);border-color:rgba(26,158,106,0.2);}
+.s-prog{background:var(--gold-light);color:#0d7377;border-color:rgba(13,115,119,0.2);}
+.s-next{background:var(--bg);color:var(--muted);border-color:var(--border);}
+/* COMPANY CLASSIFICATION */
+.ach-company-block{margin-bottom:3.5rem;}
+.ach-company-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:2px solid var(--border);}
+.ach-company-badge{padding:0.3rem 1rem;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;border-radius:100px;}
+.badge-pather{background:rgba(43,95,212,0.08);color:#2b5fd4;border:1px solid rgba(43,95,212,0.2);}
+.badge-venture{background:rgba(26,158,106,0.08);color:#1a9e6a;border:1px solid rgba(26,158,106,0.2);}
+.badge-extreme{background:rgba(214,59,59,0.08);color:#d63b3b;border:1px solid rgba(214,59,59,0.2);}
+.ach-company-name{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--ink);}
+.ach-company-role{font-size:0.78rem;color:var(--muted);margin-top:0.15rem;}
+.ach-card.pather{border-left:3px solid #2b5fd4;}
+.ach-card.venture{border-left:3px solid #1a9e6a;}
+.ach-card.extreme{border-left:3px solid #d63b3b;}
+.ach-card.pather .ach-n{background:linear-gradient(135deg,#2b5fd4,#5b8aff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.ach-card.venture .ach-n{background:linear-gradient(135deg,#1a9e6a,#3ecf8e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.ach-card.extreme .ach-n{background:linear-gradient(135deg,#d63b3b,#ff6b6b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.ach-card.pather::after{background:linear-gradient(90deg,#2b5fd4,#5b8aff);}
+.ach-card.venture::after{background:linear-gradient(90deg,#1a9e6a,#3ecf8e);}
+.ach-card.extreme::after{background:linear-gradient(90deg,#d63b3b,#ff6b6b);}
+.cs-header.pather-h{background:rgba(43,95,212,0.04);border:1px solid rgba(43,95,212,0.15);}
+.cs-header.venture-h{background:rgba(26,158,106,0.04);border:1px solid rgba(26,158,106,0.15);}
+.cs-co.pather-co{color:#2b5fd4;}
+.cs-co.venture-co{color:#1a9e6a;}
+.cs-m-n.pather-n{background:none!important;-webkit-text-fill-color:#2b5fd4!important;color:#2b5fd4!important;}
+.cs-m-n.venture-n{background:none!important;-webkit-text-fill-color:#1a9e6a!important;color:#1a9e6a!important;}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">AB.</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#achievements">Impact</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#case-studies">Cases</a></li>
+    <li><a href="#product">Product</a></li>
+    <li><a href="#artefacts">Artefacts</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div><div class="hero-grid"></div>
+  <div class="hero-tag"><span class="hero-tag-dot"></span>Available for new opportunities · UK-based</div>
+  <h1><span class="line1">Adeoluwa</span><span class="line2">Bamidele</span></h1>
+  <p class="hero-sub"><strong>Business Analyst & Product Manager</strong> specialising in AI-powered SaaS platforms, process redesign and data-driven product decisions. Currently shaping the learner experience at <strong>Pather</strong> — an AI-guided knowledge platform based in London.</p>
+  <div class="hero-actions">
+    <a href="#case-studies" class="btn-gold">View Case Studies</a>
+    <a href="https://www.linkedin.com/in/adeoluwa-bamidele/" target="_blank" class="btn-ghost">LinkedIn ↗</a>
+  </div>
+  <div class="hero-stats">
+    <div class="hstat"><div class="hstat-n">5+</div><div class="hstat-l">Years Experience</div></div>
+    <div class="hstat"><div class="hstat-n">20+</div><div class="hstat-l">MVP Initiatives</div></div>
+    <div class="hstat"><div class="hstat-n">3</div><div class="hstat-l">Industries</div></div>
+    <div class="hstat"><div class="hstat-n">6</div><div class="hstat-l">Certifications</div></div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-label reveal">Professional Profile</div>
+  <h2 class="reveal">About Me</h2>
+  <div class="about-grid">
+    <div class="reveal">
+      <div class="about-bio">
+        <p>I'm an experienced <strong>Business Analyst & Product Manager</strong> with a strong track record of delivering practical, customer-focused improvements within regulated environments.</p>
+        <p>I work closely with stakeholders across the business to understand challenges clearly, define meaningful problem statements and translate them into well-structured requirements and user stories — capturing every happy path, exception and edge case.</p>
+        <p>I use data to support decision-making, provide constructive challenge where needed, and collaborate effectively with Engineering, Design, Finance and Legal to deliver solutions that align with strategy and improve customer experience, efficiency and value for money.</p>
+      </div>
+      <div class="about-meta">
+        <span>United Kingdom</span>
+        <span>Adeoluwa&#46;bamidele&#64;gmail&#46;com</span>
+        <span>+44 7407 256368</span>
+      </div>
+    </div>
+    <div class="reveal reveal-d1">
+      <div class="pather-card">
+        <div class="pather-head">
+          <div class="pather-icon">P</div>
+          <div><div class="pather-nm">Pather</div><div class="pather-tg">Skills for Every Level with AI-Guided Learning Paths</div></div>
+        </div>
+        <p class="pather-desc">AI-powered knowledge distribution hub connecting learners with industry experts through live mentorship, structured courses, ebooks, audiobooks and podcasts. Headquartered in London, UK.</p>
+        <div class="pills">
+          <span class="pill on">Product Manager</span><span class="pill on">Business Analyst</span>
+          <span class="pill">SaaS</span><span class="pill">EdTech</span><span class="pill">AI Platform</span>
+          <span class="pill">B2B2C</span><span class="pill">Nov 2024–Present</span>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-degree">MSc Safety, Health & Environment</div>
+        <div class="edu-school">University of Salford, United Kingdom · 2023–2024</div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="sec-label reveal">Measurable Impact</div>
+  <h2 class="reveal">Key Achievements</h2>
+  <p class="sec-intro reveal">Real, verified business outcomes — classified by company and role.</p>
+
+  <div class="ach-company-block reveal">
+    <div class="ach-company-header" onclick="toggleAch('ach-pather',this)">
+      <span class="ach-company-badge badge-pather">Pather</span>
+      <div style="flex:1;"><div class="ach-company-name">Pather</div><div class="ach-company-role">Business Analyst &amp; Product Manager · AI EdTech SaaS · Nov 2024–Present · London, UK</div></div>
+      <button class="ach-toggle-btn pather-toggle open" id="btn-ach-pather"><span class="ach-toggle-icon">+</span></button>
+    </div>
+    <div class="ach-collapsible open" id="ach-pather"><div class="ach-grid">
+      <div class="ach-card pather reveal"><div class="ach-n">22%</div><div class="ach-desc">Increased onboarding conversion through end-to-end journey redesign, friction mapping and stakeholder workshops.</div><div class="ach-src">Onboarding Redesign · 2024–25</div></div>
+      <div class="ach-card pather reveal reveal-d1"><div class="ach-n">35%</div><div class="ach-desc">Reduced onboarding completion time by redesigning the 'to be' journey and eliminating unnecessary steps.</div><div class="ach-src">Onboarding Redesign · 2024–25</div></div>
+      <div class="ach-card pather reveal reveal-d2"><div class="ach-n">40%</div><div class="ach-desc">Reduced international scheduling errors via automated timezone detection and DST-aware logic for global creators.</div><div class="ach-src">Timezone Standardisation · 2024–25</div></div>
+      <div class="ach-card pather reveal"><div class="ach-n">30%</div><div class="ach-desc">Increased international transaction success by leading multi-currency payment requirements with Finance &amp; Engineering.</div><div class="ach-src">Multi-Currency Payments · 2024–25</div></div>
+      <div class="ach-card pather reveal reveal-d1"><div class="ach-n">18%</div><div class="ach-desc">Reduced post-release defects via structured user stories with full acceptance criteria covering all happy and unhappy paths.</div><div class="ach-src">UAT &amp; User Stories · 2024–25</div></div>
+      <div class="ach-card pather reveal reveal-d2"><div class="ach-n">100%</div><div class="ach-desc">On-time deployment across 3 major releases — coordinating stakeholder UAT, defect resolution and sign-off.</div><div class="ach-src">UAT Coordination · 2024–25</div></div>
+    </div></div>
+  </div>
+
+  <div class="ach-company-block reveal">
+    <div class="ach-company-header" onclick="toggleAch('ach-venture',this)">
+      <span class="ach-company-badge badge-venture">VentureReg</span>
+      <div style="flex:1;"><div class="ach-company-name">VentureReg</div><div class="ach-company-role">Business Analyst · Global Digital Services Platform · May–Oct 2024</div></div>
+      <button class="ach-toggle-btn venture-toggle open" id="btn-ach-venture"><span class="ach-toggle-icon">+</span></button>
+    </div>
+    <div class="ach-collapsible open" id="ach-venture"><div class="ach-grid">
+      <div class="ach-card venture reveal"><div class="ach-n">45%</div><div class="ach-desc">Reduced manual compliance review effort through AI-powered document validation and onboarding automation.</div><div class="ach-src">AI Onboarding · 2024</div></div>
+      <div class="ach-card venture reveal reveal-d1"><div class="ach-n">38%</div><div class="ach-desc">Reduced average business registration completion time by redesigning compliance workflows and removing redundant steps.</div><div class="ach-src">Compliance Workflow · 2024</div></div>
+      <div class="ach-card venture reveal reveal-d2"><div class="ach-n">100%</div><div class="ach-desc">Achieved full audit-ready traceability with requirement matrices across Legal, Compliance and Operations.</div><div class="ach-src">BRD &amp; Traceability · 2024</div></div>
+    </div>
+  </div>
+
+  <div class="ach-company-block reveal">
+    <div class="ach-company-header" onclick="toggleAch('ach-extreme',this)">
+      <span class="ach-company-badge badge-extreme">Extreme Mfg</span>
+      <div style="flex:1;"><div class="ach-company-name">Extreme Manufacturing Ltd</div><div class="ach-company-role">Associate Business Analyst &amp; HSE Analyst · Regulated Manufacturing · Apr 2019–Nov 2022</div></div>
+      <button class="ach-toggle-btn extreme-toggle open" id="btn-ach-extreme"><span class="ach-toggle-icon">+</span></button>
+    </div>
+    <div class="ach-collapsible open" id="ach-extreme"><div class="ach-grid">
+      <div class="ach-card extreme reveal"><div class="ach-n">32%</div><div class="ach-desc">Reduced reportable safety incidents through targeted root cause investigations, corrective action planning and KPI dashboards.</div><div class="ach-src">HSE Analytics · 2019–21</div></div>
+      <div class="ach-card extreme reveal reveal-d1"><div class="ach-n">15%</div><div class="ach-desc">Reduced non-conformance incidents using data-driven root cause analysis and process redesign across quality workflows.</div><div class="ach-src">Process Improvement · 2021–22</div></div>
+      <div class="ach-card extreme reveal reveal-d2"><div class="ach-n">↑</div><div class="ach-desc">Improved reporting accuracy and audit readiness through process redesign and structured documentation improvements.</div><div class="ach-src">Compliance Reporting · 2021–22</div></div>
+    </div></div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-label reveal">Expertise</div>
+  <h2 class="reveal">Skills & Tools</h2>
+  <div class="skills-cols">
+    <div class="reveal">
+      <div class="sk-title">Technical Skills</div>
+      <div class="sk-list">
+        <div class="sk-item hl">Business Analysis Delivery</div>
+        <div class="sk-item hl">Process Flow Mapping (AS IS / TO BE)</div>
+        <div class="sk-item hl">User Journey Mapping</div>
+        <div class="sk-item hl">User Stories & Acceptance Criteria</div>
+        <div class="sk-item">Requirements Gathering & Elicitation</div>
+        <div class="sk-item">Business Requirements Documents</div>
+        <div class="sk-item">Product Roadmap Planning</div>
+        <div class="sk-item">Wireframing & Prototyping</div>
+        <div class="sk-item">User Acceptance Testing (UAT)</div>
+        <div class="sk-item">Gap Analysis & Impact Assessment</div>
+        <div class="sk-item">User Research</div>
+        <div class="sk-item">KPI Dashboard Development</div>
+      </div>
+    </div>
+    <div class="reveal reveal-d1">
+      <div class="sk-title">Core Competencies</div>
+      <div class="sk-list">
+        <div class="sk-item hl">Stakeholder Management</div>
+        <div class="sk-item hl">SDLC & Agile/Scrum</div>
+        <div class="sk-item hl">Cross-Functional Collaboration</div>
+        <div class="sk-item">CRM Implementation & Optimisation</div>
+        <div class="sk-item">Business Process Modelling</div>
+        <div class="sk-item">AI-Powered Platform Analysis</div>
+        <div class="sk-item">Backlog Prioritisation</div>
+        <div class="sk-item">Root Cause Analysis</div>
+        <div class="sk-item">Compliance & Regulatory Analysis</div>
+        <div class="sk-item">Commercial Awareness</div>
+      </div>
+      <div class="sk-title" style="margin-top:2rem;">Tools & Platforms</div>
+      <div class="tools-wrap">
+        <span class="tool">Azure DevOps</span><span class="tool">JIRA</span>
+        <span class="tool">Power BI</span><span class="tool">Miro</span>
+        <span class="tool">Figma</span><span class="tool">Visio</span>
+        <span class="tool">Draw.io</span><span class="tool">Engage Process</span>
+        <span class="tool">SharePoint</span><span class="tool">MS Project</span>
+        <span class="tool">Excel</span><span class="tool">Teams</span>
+      </div>
+    </div>
+    <div class="reveal reveal-d2">
+      <div class="sk-title">Certifications</div>
+      <div class="cert-list">
+        <div class="cert"><div class="cert-nm">Foundation Certificate in Business Analysis</div><div class="cert-yr">2026</div></div>
+        <div class="cert"><div class="cert-nm">Practitioner Certificate in Business Analysis</div><div class="cert-yr">2026</div></div>
+        <div class="cert"><div class="cert-nm">Diploma in Product Management</div><div class="cert-yr">2025</div></div>
+        <div class="cert"><div class="cert-nm">AI For Product Management</div><div class="cert-yr">2025</div></div>
+        <div class="cert"><div class="cert-nm">Scrum Fundamentals</div><div class="cert-yr">2025</div></div>
+        <div class="cert"><div class="cert-nm">Business Analysis Process Management</div><div class="cert-yr">2025</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- CASE STUDIES (TABBED) -->
+<section id="case-studies">
+  <div class="sec-label reveal">Deep Dives</div>
+  <h2 class="reveal">Case Studies</h2>
+  <p class="sec-intro reveal">End-to-end walkthroughs — problem, process, artefacts and outcomes.</p>
+
+  <div class="tab-nav reveal">
+    <button class="tab-btn active" onclick="switchTab(0)">01 · Pather — Onboarding</button>
+    <button class="tab-btn" onclick="switchTab(1)">02 · VentureReg — AI Compliance</button>
+    <button class="tab-btn" onclick="switchTab(2)">03 · Pather — Timezone Fix</button>
+  </div>
+
+  <!-- TAB 1 -->
+  <div class="tab-panel active" id="tab0">
+  <div class="cs-header pather-h">
+   <div class="cs-co pather-co">Pather · AI-Powered SaaS · Nov 2024–Present</div>
+   <div class="cs-title">Redesigning the Learner Onboarding Journey</div>
+   <div class="cs-chips">
+    <span class="chip">Process Redesign</span><span class="chip">Journey Mapping</span>
+    <span class="chip">Stakeholder Workshops</span><span class="chip">User Research</span><span class="chip">UAT</span>
+   </div>
+  </div>
+  <div class="cs-cols">
+   <div><div class="cs-col-lbl">The Problem</div><div class="cs-col-txt">The user onboarding journey was causing friction and drop-offs, with completion rates consistently below target. The 'as is' flow had never been audited against actual user behaviour — leaving friction points unaddressed and conversion suffering.</div></div>
+   <div><div class="cs-col-lbl">My Role & Approach</div><div class="cs-col-txt">Led end-to-end analysis across 4 apps. Conducted behaviour analysis and facilitated stakeholder workshops. Mapped all decision points — email verification failures, inactive sessions and skip paths. Redesigned 'to be' journey and authored structured user stories with full acceptance criteria.</div></div>
+   <div><div class="cs-col-lbl">Tools & Methods</div><div class="cs-col-txt">Miro · Azure DevOps · Draw.io · Stakeholder Workshops · Behaviour Analytics · AS IS / TO BE Modelling · UAT Coordination (3 releases) · PRD v1.4 authorship</div></div>
+  </div>
+  <div class="cs-metrics">
+   <div class="cs-metric"><div class="cs-m-n pather-n">35%</div><div class="cs-m-l">Reduction in onboarding time</div></div>
+   <div class="cs-metric"><div class="cs-m-n pather-n">22%</div><div class="cs-m-l">Increase in conversion rate</div></div>
+   <div class="cs-metric"><div class="cs-m-n pather-n">18%</div><div class="cs-m-l">Reduction in post-release defects</div></div>
+  </div>
+  <div class="flow-box-wrap">
+   <div class="flow-lbl">📐 Process Flow Artefact — Learner Onboarding (Happy Path + Exception Paths)</div>
+   <div class="flow-row">
+    <div class="fb">Start</div><div class="fa">→</div>
+    <div class="fb">Sign up · email & password</div><div class="fa">→</div>
+    <div class="fb">Account created</div><div class="fa">→</div>
+    <div class="fb">Verification email sent</div><div class="fa">→</div>
+    <div class="fd">Email verified?</div><div class="fa"><span class="fy">YES →</span></div>
+    <div class="fb">Verification success</div><div class="fa">→</div>
+    <div class="fd">Session active?</div><div class="fa"><span class="fy">YES →</span></div>
+    <div class="fb">Learner Hub</div><div class="fa">→</div>
+    <div class="fd">Onboarding done?</div><div class="fa"><span class="fy">YES →</span></div>
+    <div class="fb fok">Full Access ✓</div>
+   </div>
+   <div class="flow-row" style="opacity:0.7;margin-top:0.5rem;">
+    <div class="fd">Email verified?</div><div class="fa"><span class="fn">NO →</span></div>
+    <div class="fb">Check inbox prompt</div><div class="fa">→</div>
+    <div class="fb">Resend verification link</div><div class="fa">↺ loop</div>
+   </div>
+   <div class="flow-row" style="opacity:0.7;">
+    <div class="fd">Session active?</div><div class="fa"><span class="fn">NO →</span></div>
+    <div class="fb">Auto sign in</div><div class="fa">→ Learner Hub</div>
+   </div>
+   <div class="flow-row" style="opacity:0.7;">
+    <div class="fd">Onboarding done?</div><div class="fa"><span class="fn">NO →</span></div>
+    <div class="fb">Onboarding form</div><div class="fa">→</div>
+    <div class="fb">Career details</div><div class="fa">→</div>
+    <div class="fb">Location details</div><div class="fa">→</div>
+    <div class="fb">Save data</div><div class="fa">→</div>
+    <div class="fb fok">Full Access ✓</div>
+   </div>
+   <div class="flow-row" style="opacity:0.7;">
+    <div class="fb">Skip onboarding</div><div class="fa">→</div><div class="fb fok">Full Access ✓</div>
+   </div>
+   <div class="flow-note">✅ 3 decision points · 2 loop-back paths · 1 skip path · All happy and unhappy paths captured — contributing to 18% reduction in post-release defects.</div>
+  </div>
+ </div>
+
+ <!-- TAB 2: VentureReg Full Case Study -->
+ <div class="tab-panel" id="tab1">
+  <div class="cs-header venture-h">
+      <div class="cs-co venture-co">VentureReg · Global Digital Services Platform · May–Oct 2024</div>
+      <div class="cs-title">AI-Powered Compliance Onboarding Automation</div>
+      <div class="cs-chips">
+        <span class="chip">AI Integration</span><span class="chip">Compliance Workflows</span>
+        <span class="chip">Regulatory Analysis</span><span class="chip">Workflow Redesign</span>
+        <span class="chip">Stakeholder Workshops</span><span class="chip">KPI Dashboards</span>
+      </div>
+    </div>
+    <div class="cs-cols">
+      <div>
+        <div class="cs-col-lbl">The Problem</div>
+        <div class="cs-col-txt">Users experienced significant delays in the business registration process due to repetitive manual data entry and compliance checks. The existing workflow had redundant approval steps and no automated decision logic — creating operational bottlenecks, increasing compliance risk and consuming disproportionate resource across global markets.</div>
+      </div>
+      <div>
+        <div class="cs-col-lbl">My Role &amp; Approach</div>
+        <div class="cs-col-txt">Led full 'as is' analysis and identified workflow inefficiencies. Partnered with Product and Engineering to introduce AI-powered document validation and auto pre-population. Facilitated workshops across Legal, Compliance and Operations to capture regulatory requirements with full traceability. Coordinated UAT and defect resolution ahead of release.</div>
+      </div>
+      <div>
+        <div class="cs-col-lbl">Tools &amp; Methods</div>
+        <div class="cs-col-txt">JIRA · Visio / Draw.io · Compliance Traceability Matrix · Stakeholder Workshops (Legal, Compliance, Ops) · UAT Planning &amp; Execution · Power BI KPI Dashboards · Rule-based Decision Logic Design · Root Cause Analysis</div>
+      </div>
+    </div>
+    <div class="cs-metrics">
+      <div class="cs-metric"><div class="cs-m-n venture-n">45%</div><div class="cs-m-l">Reduction in manual review effort</div></div>
+      <div class="cs-metric"><div class="cs-m-n venture-n">38%</div><div class="cs-m-l">Reduction in registration time</div></div>
+      <div class="cs-metric"><div class="cs-m-n venture-n">100%</div><div class="cs-m-l">Audit-ready traceability achieved</div></div>
+    </div>
+    <div class="flow-box-wrap" style="margin-bottom:1.5rem;">
+      <div class="flow-lbl">&#128208; Process Flow &#8212; Business Registration (AS IS &#8594; TO BE Redesign)</div>
+      <div style="font-size:0.72rem;color:var(--red);margin-bottom:0.7rem;font-weight:600;">&#x2717; AS IS &#8212; Manual Process (before redesign):</div>
+      <div class="flow-row" style="opacity:0.65;">
+        <div class="fb">Submit docs</div><div class="fa">&#8594;</div>
+        <div class="fb">Manual data entry</div><div class="fa">&#8594;</div>
+        <div class="fb">Compliance review</div><div class="fa">&#8594;</div>
+        <div class="fd">Complete?</div><div class="fa"><span class="fn">NO &#8594;</span></div>
+        <div class="fb">Return to user &#8635;</div>
+      </div>
+      <div class="flow-row" style="opacity:0.65;margin-bottom:1.3rem;">
+        <span style="padding:0 0.5rem;font-size:0.7rem;color:var(--muted);">Complete? YES &#8594;</span>
+        <div class="fb">Manual approval</div><div class="fa">&#8594;</div>
+        <div class="fb">Registration issued (slow)</div>
+      </div>
+      <div style="font-size:0.72rem;color:var(--green);margin-bottom:0.7rem;font-weight:600;">&#x2713; TO BE &#8212; AI-Powered (after redesign):</div>
+      <div class="flow-row">
+        <div class="fb">Submit docs</div><div class="fa">&#8594;</div>
+        <div class="fb fok">AI validates docs &#10003;</div><div class="fa">&#8594;</div>
+        <div class="fb fok">Auto pre-populate</div><div class="fa">&#8594;</div>
+        <div class="fd">Rules met?</div><div class="fa"><span class="fy">YES &#8594;</span></div>
+        <div class="fb fok">Auto-approve &#10003;</div><div class="fa">&#8594;</div>
+        <div class="fb fok">Registration issued &#10003;</div>
+      </div>
+      <div class="flow-row" style="opacity:0.7;margin-top:0.5rem;">
+        <div class="fd">Rules met?</div><div class="fa"><span class="fn">NO &#8594;</span></div>
+        <div class="fb">Flag for review</div><div class="fa">&#8594;</div>
+        <div class="fb">Priority queue</div><div class="fa">&#8594;</div>
+        <div class="fb">Compliance officer</div><div class="fa">&#8594;</div>
+        <div class="fb fok">Issued &#10003;</div>
+      </div>
+      <div class="flow-note">&#10003; AI validation eliminated repetitive manual entry &#183; Rule-based logic removed redundant approval steps &#183; All exception paths captured &#183; Full audit trail generated &#8212; achieving 100% audit-ready traceability.</div>
+    </div>
+    <div class="reveal" style="background:var(--bg);border:1px solid var(--border);padding:2rem;border-radius:3px;">
+      <div class="cs-col-lbl" style="margin-bottom:1.2rem;">Stakeholder Workshop Coverage</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;">
+        <div style="background:var(--surface);border:1px solid var(--border);padding:1.2rem;border-radius:3px;text-align:center;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">&#9878;&#65039;</div>
+          <div style="font-size:0.85rem;font-weight:600;color:var(--ink);margin-bottom:0.3rem;">Legal</div>
+          <div style="font-size:0.78rem;color:var(--muted);line-height:1.6;">Regulatory requirements, jurisdiction-specific rules and liability considerations</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);padding:1.2rem;border-radius:3px;text-align:center;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">&#128737;&#65039;</div>
+          <div style="font-size:0.85rem;font-weight:600;color:var(--ink);margin-bottom:0.3rem;">Compliance</div>
+          <div style="font-size:0.78rem;color:var(--muted);line-height:1.6;">Document validation rules, KYC requirements, audit trail design and traceability standards</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);padding:1.2rem;border-radius:3px;text-align:center;">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">&#9881;&#65039;</div>
+          <div style="font-size:0.85rem;font-weight:600;color:var(--ink);margin-bottom:0.3rem;">Operations</div>
+          <div style="font-size:0.78rem;color:var(--muted);line-height:1.6;">Workflow pain points, manual workload volumes and SLA requirements for registration</div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div><!-- end tab1 -->
+
+  <!-- TAB 3 -->
+  <div class="tab-panel" id="tab2">
+  <div class="cs-header pather-h">
+      <div class="cs-co pather-co">Pather · Timezone Standardisation · 2024–25</div>
+      <div class="cs-title">Resolving Timezone Inconsistencies for Global Creator Events</div>
+      <div class="cs-chips">
+        <span class="chip">Timezone Logic</span><span class="chip">Global User Requirements</span>
+        <span class="chip">Edge Case Mapping</span><span class="chip">DST Changes</span>
+        <span class="chip">Cross-Border Scheduling</span><span class="chip">Automated Detection</span>
+      </div>
+    </div>
+    <div class="cs-body">
+      <div class="cs-cols">
+        <div>
+          <div class="cs-col-lbl">The Problem</div>
+          <div class="cs-col-txt">Digital creators hosting international events on Pather were experiencing timezone inconsistencies that caused events to display at incorrect local times for global audiences. Edge cases including Daylight Saving Time (DST) changes and cross-border scheduling were not being handled — leading to widespread scheduling errors, missed events and declining customer satisfaction scores among international users.</div>
+        </div>
+        <div>
+          <div class="cs-col-lbl">My Role &amp; Approach</div>
+          <div class="cs-col-txt">Gathered global user requirements through targeted stakeholder interviews and support ticket analysis to surface the root causes. Mapped all timezone edge cases including DST transitions, UTC offset variations and cross-border scheduling scenarios. Defined requirements for automated timezone detection and learner-facing display logic, ensuring events always render in the viewer's correct local time. Collaborated with Engineering to implement and validate the solution across UAT cycles.</div>
+        </div>
+        <div>
+          <div class="cs-col-lbl">Tools &amp; Methods</div>
+          <div class="cs-col-txt">
+            · Global user requirements workshops<br/>
+            · Support ticket &amp; feedback analysis<br/>
+            · Edge case &amp; DST mapping (Miro)<br/>
+            · Azure DevOps — user stories<br/>
+            · AS IS / TO BE process modelling<br/>
+            · Engineering collaboration<br/>
+            · UAT planning &amp; execution<br/>
+            · Customer satisfaction tracking
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-metrics">
+        <div class="cs-metric"><div class="cs-m-n pather-n">40%</div><div class="cs-m-l">Reduction in scheduling errors</div></div>
+        <div class="cs-metric"><div class="cs-m-n pather-n">↑</div><div class="cs-m-l">Improved customer satisfaction scores</div></div>
+        <div class="cs-metric"><div class="cs-m-n pather-n">100%</div><div class="cs-m-l">DST &amp; cross-border edge cases covered</div></div>
+      </div>
+
+      <div class="flow-box-wrap" style="margin-bottom:1.5rem;">
+        <div class="flow-lbl">📐 Timezone Detection — Edge Case Flow (AS IS → TO BE)</div>
+        <div style="font-size:0.73rem;color:var(--red);margin-bottom:0.7rem;font-weight:600;">✗ AS IS — No timezone handling:</div>
+        <div class="flow-row" style="opacity:0.6;">
+          <div class="fb">Expert creates event</div><div class="fa">→</div>
+          <div class="fb" style="border-color:rgba(214,59,59,0.3);">Event stored in server time</div><div class="fa">→</div>
+          <div class="fb" style="border-color:rgba(214,59,59,0.3);">Displayed as-is to all users</div><div class="fa">→</div>
+          <div class="fb" style="border-color:rgba(214,59,59,0.3);color:var(--red);">Wrong time for international viewers ✗</div>
+        </div>
+        <div style="font-size:0.73rem;color:var(--green);margin-bottom:0.7rem;font-weight:600;margin-top:1rem;">✓ TO BE — Automated detection:</div>
+        <div class="flow-row">
+          <div class="fb">Expert creates event</div><div class="fa">→</div>
+          <div class="fb fok">Detect expert timezone</div><div class="fa">→</div>
+          <div class="fd">DST active?</div><div class="fa"><span class="fy">YES →</span></div>
+          <div class="fb fok">Adjust UTC offset ✓</div><div class="fa">→</div>
+          <div class="fb fok">Convert to learner local time ✓</div>
+        </div>
+        <div class="flow-row" style="opacity:0.7;">
+          <div class="fd">DST active?</div><div class="fa"><span class="fn">NO →</span></div>
+          <div class="fb">Use standard UTC offset</div><div class="fa">→</div>
+          <div class="fb fok">Display in learner local time ✓</div>
+        </div>
+        <div class="flow-row" style="opacity:0.7;margin-top:0.4rem;">
+          <div class="fb">Cross-border event</div><div class="fa">→</div>
+          <div class="fd">Multiple timezones?</div><div class="fa"><span class="fy">YES →</span></div>
+          <div class="fb fok">Show expert TZ + learner TZ ✓</div>
+        </div>
+        <div class="flow-row" style="opacity:0.7;">
+          <div class="fb">Invalid timezone detected</div><div class="fa">→</div>
+          <div class="fb fok">Fallback to UTC + user prompt ✓</div>
+        </div>
+        <div class="flow-note">✅ 4 edge cases captured: DST active · DST inactive · Cross-border multi-timezone · Invalid timezone fallback — 40% reduction in scheduling errors · Improved customer satisfaction scores globally</div>
+      </div>
+
+      <div style="background:var(--bg);border:1px solid var(--border);padding:2rem;border-radius:3px;">
+        <div class="cs-col-lbl" style="margin-bottom:1.2rem;">Edge Cases Mapped &amp; Resolved</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+          <div style="background:var(--surface);border:1px solid var(--border);padding:1.2rem;border-radius:3px;">
+            <div style="font-size:0.78rem;font-weight:700;color:var(--ink);margin-bottom:0.4rem;">🕰 DST Transitions</div>
+            <div style="font-size:0.78rem;color:var(--muted);line-height:1.6;">Events created before a DST change automatically recalculate and display the correct adjusted time to all viewers — no manual update needed by the creator.</div>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);padding:1.2rem;border-radius:3px;">
+            <div style="font-size:0.78rem;font-weight:700;color:var(--ink);margin-bottom:0.4rem;">🌍 Cross-Border Scheduling</div>
+            <div style="font-size:0.78rem;color:var(--muted);line-height:1.6;">Events spanning multiple countries display both the expert's timezone and the learner's local equivalent, eliminating cross-border scheduling confusion.</div>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);padding:1.2rem;border-radius:3px;">
+            <div style="font-size:0.78rem;font-weight:700;color:var(--ink);margin-bottom:0.4rem;">📡 UTC Offset Validation</div>
+            <div style="font-size:0.78rem;color:var(--muted);line-height:1.6;">All stored event times are validated against UTC offset rules on retrieval, preventing stale or incorrect offsets from reaching the user interface.</div>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);padding:1.2rem;border-radius:3px;">
+            <div style="font-size:0.78rem;font-weight:700;color:var(--ink);margin-bottom:0.4rem;">⚠️ Invalid Timezone Fallback</div>
+            <div style="font-size:0.78rem;color:var(--muted);line-height:1.6;">If an unrecognised timezone is detected, the system defaults to UTC and prompts the user to verify their timezone — ensuring no event is displayed incorrectly.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- PRODUCT -->
+<section id="product">
+  <div class="sec-label reveal">Product Ownership</div>
+  <h2 class="reveal">Pather — Product & Roadmap</h2>
+  <p class="sec-intro reveal">I contributed to product strategy, pricing model and 20+ MVP initiatives across four apps — Expert, Learner, Admin and Website.</p>
+  <div class="product-grid">
+    <div class="reveal">
+      <div class="sk-title">Live Pricing Model (pather.co)</div>
+      <div class="pricing-cards">
+        <div class="pc">
+          <div class="pc-tier">Starter</div>
+          <div class="pc-price">Free</div>
+          <div class="pc-comm">10% commission per sale</div>
+          <ul class="pc-feats"><li>AI course creation</li><li>Analytics dashboard</li><li>1GB storage</li><li>Unlimited products</li><li>Live events via Whereby</li><li>Mentorship hosting</li></ul>
+        </div>
+        <div class="pc feat">
+          <div class="pc-tier">Build</div>
+          <div class="pc-price">£18<span>/mo</span></div>
+          <div class="pc-comm">7.5% · Zero Stripe fees</div>
+          <ul class="pc-feats"><li>Everything in Starter</li><li>30GB storage</li><li>Cohort-based courses</li><li>Digital downloads</li><li>Course certificates</li><li>Enhanced analytics</li><li>Invoicing</li></ul>
+        </div>
+        <div class="pc">
+          <div class="soon">Soon</div>
+          <div class="pc-tier">Enterprise</div>
+          <div class="pc-price">£45<span>/mo</span></div>
+          <div class="pc-comm">7.5% commission</div>
+          <ul class="pc-feats"><li>Everything in Build</li><li>Advanced automation</li><li>Multi-level affiliates</li><li>Dedicated success mgr</li><li>Int'l tax handling</li><li>Learning paths</li></ul>
+        </div>
+      </div>
+      <div style="margin-top:2rem;padding:1.5rem;background:var(--bg);border:1px solid var(--border);">
+        <div class="sk-title">KPI Targets (PRD v1.4)</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;">
+          <div style="font-size:0.82rem;color:var(--muted);">500 experts by Q1</div>
+          <div style="font-size:0.82rem;color:var(--muted);">3,000 learners by Q1</div>
+          <div style="font-size:0.82rem;color:var(--muted);">£200K revenue by Q4 2025</div>
+          <div style="font-size:0.82rem;color:var(--muted);">60% course completion rate</div>
+          <div style="font-size:0.82rem;color:var(--muted);">99%+ platform uptime</div>
+          <div style="font-size:0.82rem;color:var(--muted);">80% AI recommendation satisfaction</div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal reveal-d1">
+      <div class="sk-title">MVP Roadmap — Selected Initiatives</div>
+      <div class="roadmap-list">
+        <div class="rm-item"><div class="rm-date">Apr 2024</div><div class="rm-name">Platform Infrastructure Setup</div><div class="rm-s s-done">Done</div></div>
+        <div class="rm-item"><div class="rm-date">Apr–May 2024</div><div class="rm-name">Expert & Learner Onboarding</div><div class="rm-s s-done">Done</div></div>
+        <div class="rm-item"><div class="rm-date">Jun 2024</div><div class="rm-name">Quiz, Assessment & Result Checker</div><div class="rm-s s-done">Done</div></div>
+        <div class="rm-item"><div class="rm-date">Sep 2024</div><div class="rm-name">Expert Public Profiles</div><div class="rm-s s-done">Done</div></div>
+        <div class="rm-item"><div class="rm-date">Oct 2024</div><div class="rm-name">AI Course & Assessment Management</div><div class="rm-s s-done">Done</div></div>
+        <div class="rm-item"><div class="rm-date">Nov–Dec 2024</div><div class="rm-name">Admin Back-Office & Social Sign-Up</div><div class="rm-s s-done">Done</div></div>
+        <div class="rm-item"><div class="rm-date">Dec 2024</div><div class="rm-name">Expert Wallet & Withdrawals</div><div class="rm-s s-done">Done</div></div>
+        <div class="rm-item"><div class="rm-date">Jan 2025</div><div class="rm-name">Adaptive Learning (AI-Powered)</div><div class="rm-s s-done">Done</div></div>
+        <div class="rm-item"><div class="rm-date">Feb 2025</div><div class="rm-name">NG Localisation (Pather.ng)</div><div class="rm-s s-prog">In Progress</div></div>
+        <div class="rm-item"><div class="rm-date">Mar–Apr 2025</div><div class="rm-name">Core Website & Expert Platform Improvements</div><div class="rm-s s-prog">In Progress</div></div>
+        <div class="rm-item"><div class="rm-date">Mar 2025</div><div class="rm-name">Collaborative Course Hosting</div><div class="rm-s s-prog">In Progress</div></div>
+        <div class="rm-item"><div class="rm-date">TBD</div><div class="rm-name">Community Feature & Explore Feature</div><div class="rm-s s-prog">In Progress</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- ARTEFACTS -->
+<section id="artefacts">
+  <div class="sec-label reveal">Deliverables</div>
+  <h2 class="reveal">Project Artefacts</h2>
+  <p class="sec-intro reveal">Click any artefact to expand and explore. Illustrated previews of key BA/PM deliverables.</p>
+  <div class="art-grid">
+
+    <!-- 1 Process Flow -->
+    <div class="art-card reveal" onclick="openLightbox('lb-flow')">
+      <div class="art-img-wrap">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#12121a"/>
+          <!-- grid -->
+          <line x1="0" y1="100" x2="400" y2="100" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <!-- nodes -->
+          <rect x="10" y="88" width="50" height="24" rx="2" fill="#1a1a26" stroke="rgba(13,115,119,0.4)" stroke-width="1"/>
+          <text x="35" y="104" fill="#14a085" font-size="7" text-anchor="middle" font-family="monospace">Start</text>
+          <line x1="60" y1="100" x2="80" y2="100" stroke="#14a085" stroke-width="1" marker-end="url(#arr)"/>
+          <rect x="80" y="85" width="65" height="30" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+          <text x="112" y="99" fill="rgba(255,255,255,0.7)" font-size="6.5" text-anchor="middle" font-family="monospace">Sign Up</text>
+          <text x="112" y="109" fill="rgba(255,255,255,0.7)" font-size="6.5" text-anchor="middle" font-family="monospace">Email &amp; PW</text>
+          <line x1="145" y1="100" x2="165" y2="100" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+          <!-- diamond -->
+          <polygon points="185,85 215,100 185,115 155,100" fill="#1a1a26" stroke="rgba(13,115,119,0.5)" stroke-width="1"/>
+          <text x="185" y="103" fill="#20c997" font-size="6" text-anchor="middle" font-family="monospace">Verified?</text>
+          <line x1="215" y1="100" x2="235" y2="100" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+          <text x="224" y="96" fill="#3ecf8e" font-size="6" text-anchor="middle" font-family="monospace">YES</text>
+          <rect x="235" y="87" width="55" height="26" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+          <text x="262" y="100" fill="rgba(255,255,255,0.7)" font-size="6.5" text-anchor="middle" font-family="monospace">Verification</text>
+          <text x="262" y="109" fill="rgba(255,255,255,0.7)" font-size="6.5" text-anchor="middle" font-family="monospace">Success</text>
+          <line x1="290" y1="100" x2="310" y2="100" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+          <!-- final -->
+          <rect x="310" y="85" width="75" height="30" rx="2" fill="#1a1a26" stroke="rgba(62,207,142,0.5)" stroke-width="1"/>
+          <text x="347" y="99" fill="#3ecf8e" font-size="6.5" text-anchor="middle" font-family="monospace">Full Account</text>
+          <text x="347" y="109" fill="#3ecf8e" font-size="6.5" text-anchor="middle" font-family="monospace">Access ✓</text>
+          <!-- NO path -->
+          <line x1="185" y1="115" x2="185" y2="150" stroke="rgba(255,107,107,0.5)" stroke-width="1"/>
+          <text x="190" y="135" fill="#ff6b6b" font-size="6" font-family="monospace">NO</text>
+          <rect x="140" y="150" width="90" height="26" rx="2" fill="#1a1a26" stroke="rgba(255,107,107,0.3)" stroke-width="1"/>
+          <text x="185" y="163" fill="rgba(255,255,255,0.5)" font-size="6.5" text-anchor="middle" font-family="monospace">Check Inbox /</text>
+          <text x="185" y="172" fill="rgba(255,255,255,0.5)" font-size="6.5" text-anchor="middle" font-family="monospace">Resend Link ↺</text>
+          <defs><marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#14a085"/></marker></defs>
+        </svg>
+        <div class="art-overlay"><div class="art-expand">Expand ↗</div></div>
+      </div>
+      <div class="art-body">
+        <div class="art-icon-row"><div class="art-icon">🗺️</div><div class="art-title">Process Flow Map</div></div>
+        <div class="art-desc">Learner onboarding AS IS / TO BE — 3 decision points, loop-backs, skip paths and all exception scenarios captured.</div>
+        <div class="art-tag">Draw.io · Pather</div>
+      </div>
+    </div>
+
+    <!-- 2 User Journey -->
+    <div class="art-card reveal reveal-d1" onclick="openLightbox('lb-journey')">
+      <div class="art-img-wrap">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#12121a"/>
+          <!-- swim lanes -->
+          <rect x="0" y="0" width="400" height="32" fill="rgba(13,115,119,0.07)"/>
+          <text x="10" y="20" fill="rgba(13,115,119,0.7)" font-size="8" font-family="monospace" font-weight="bold">LEARNER JOURNEY — PATHER ONBOARDING</text>
+          <!-- stages -->
+          <text x="30" y="50" fill="rgba(255,255,255,0.35)" font-size="7" font-family="monospace">DISCOVER</text>
+          <text x="110" y="50" fill="rgba(255,255,255,0.35)" font-size="7" font-family="monospace">SIGN UP</text>
+          <text x="190" y="50" fill="rgba(255,255,255,0.35)" font-size="7" font-family="monospace">ONBOARD</text>
+          <text x="275" y="50" fill="rgba(255,255,255,0.35)" font-size="7" font-family="monospace">EXPLORE</text>
+          <text x="345" y="50" fill="rgba(255,255,255,0.35)" font-size="7" font-family="monospace">ENROLL</text>
+          <!-- dividers -->
+          <line x1="95" y1="35" x2="95" y2="195" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <line x1="175" y1="35" x2="175" y2="195" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <line x1="260" y1="35" x2="260" y2="195" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <line x1="335" y1="35" x2="335" y2="195" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <!-- touchpoints -->
+          <circle cx="47" cy="80" r="12" fill="rgba(13,115,119,0.15)" stroke="rgba(13,115,119,0.4)" stroke-width="1"/>
+          <text x="47" y="84" fill="#14a085" font-size="9" text-anchor="middle">🌐</text>
+          <text x="47" y="102" fill="rgba(255,255,255,0.4)" font-size="6" text-anchor="middle" font-family="monospace">Homepage</text>
+          <circle cx="135" cy="80" r="12" fill="rgba(13,115,119,0.15)" stroke="rgba(13,115,119,0.4)" stroke-width="1"/>
+          <text x="135" y="84" fill="#14a085" font-size="9" text-anchor="middle">✉</text>
+          <text x="135" y="102" fill="rgba(255,255,255,0.4)" font-size="6" text-anchor="middle" font-family="monospace">Email verify</text>
+          <circle cx="217" cy="80" r="12" fill="rgba(13,115,119,0.15)" stroke="rgba(13,115,119,0.4)" stroke-width="1"/>
+          <text x="217" y="84" fill="#14a085" font-size="9" text-anchor="middle">👤</text>
+          <text x="217" y="102" fill="rgba(255,255,255,0.4)" font-size="6" text-anchor="middle" font-family="monospace">Profile setup</text>
+          <circle cx="297" cy="80" r="12" fill="rgba(13,115,119,0.15)" stroke="rgba(13,115,119,0.4)" stroke-width="1"/>
+          <text x="297" y="84" fill="#14a085" font-size="9" text-anchor="middle">🔍</text>
+          <text x="297" y="102" fill="rgba(255,255,255,0.4)" font-size="6" text-anchor="middle" font-family="monospace">Browse</text>
+          <circle cx="367" cy="80" r="12" fill="rgba(62,207,142,0.15)" stroke="rgba(62,207,142,0.5)" stroke-width="1"/>
+          <text x="367" y="84" fill="#3ecf8e" font-size="9" text-anchor="middle">✓</text>
+          <text x="367" y="102" fill="rgba(62,207,142,0.6)" font-size="6" text-anchor="middle" font-family="monospace">Enrolled!</text>
+          <!-- journey line -->
+          <polyline points="47,80 135,80 217,80 297,80 367,80" fill="none" stroke="rgba(13,115,119,0.3)" stroke-width="1.5" stroke-dasharray="4,3"/>
+          <!-- emotion row -->
+          <text x="10" y="130" fill="rgba(255,255,255,0.25)" font-size="6.5" font-family="monospace">EMOTION</text>
+          <text x="47" y="145" font-size="14" text-anchor="middle">😐</text>
+          <text x="135" y="145" font-size="14" text-anchor="middle">😤</text>
+          <text x="217" y="145" font-size="14" text-anchor="middle">😊</text>
+          <text x="297" y="145" font-size="14" text-anchor="middle">😃</text>
+          <text x="367" y="145" font-size="14" text-anchor="middle">🎉</text>
+          <!-- pain points -->
+          <text x="10" y="170" fill="rgba(255,255,255,0.25)" font-size="6.5" font-family="monospace">PAIN POINTS</text>
+          <rect x="100" y="168" width="85" height="20" rx="2" fill="rgba(255,107,107,0.08)" stroke="rgba(255,107,107,0.25)" stroke-width="1"/>
+          <text x="142" y="182" fill="rgba(255,107,107,0.7)" font-size="6" text-anchor="middle" font-family="monospace">Verify friction / drop-off</text>
+          <rect x="180" y="168" width="75" height="20" rx="2" fill="rgba(255,107,107,0.06)" stroke="rgba(255,107,107,0.2)" stroke-width="1"/>
+          <text x="217" y="182" fill="rgba(255,107,107,0.5)" font-size="6" text-anchor="middle" font-family="monospace">Form abandonment</text>
+        </svg>
+        <div class="art-overlay"><div class="art-expand">Expand ↗</div></div>
+      </div>
+      <div class="art-body">
+        <div class="art-icon-row"><div class="art-icon">👤</div><div class="art-title">User Journey Map</div></div>
+        <div class="art-desc">Learner onboarding journey — touchpoints, emotional states and pain points mapped across 5 stages from discovery to enrolment.</div>
+        <div class="art-tag">Miro · Pather</div>
+      </div>
+    </div>
+
+    <!-- 3 KPI Dashboard -->
+    <div class="art-card reveal reveal-d2" onclick="openLightbox('lb-kpi')">
+      <div class="art-img-wrap">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#12121a"/>
+          <rect x="0" y="0" width="400" height="28" fill="rgba(13,115,119,0.07)"/>
+          <text x="12" y="18" fill="rgba(13,115,119,0.8)" font-size="8" font-family="monospace" font-weight="bold">PATHER · KPI DASHBOARD</text>
+          <text x="310" y="18" fill="rgba(255,255,255,0.3)" font-size="7" font-family="monospace">Q4 2025</text>
+          <!-- KPI cards -->
+          <rect x="8" y="36" width="85" height="48" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+          <text x="16" y="52" fill="rgba(255,255,255,0.35)" font-size="6" font-family="monospace">CONVERSION RATE</text>
+          <text x="16" y="72" fill="#3ecf8e" font-size="20" font-family="sans-serif" font-weight="bold">22%</text>
+          <text x="16" y="82" fill="rgba(62,207,142,0.5)" font-size="6" font-family="monospace">↑ from 14%</text>
+          <rect x="101" y="36" width="85" height="48" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+          <text x="109" y="52" fill="rgba(255,255,255,0.35)" font-size="6" font-family="monospace">ONBOARD TIME</text>
+          <text x="109" y="72" fill="#14a085" font-size="20" font-family="sans-serif" font-weight="bold">35%</text>
+          <text x="109" y="82" fill="rgba(13,115,119,0.5)" font-size="6" font-family="monospace">↓ reduction</text>
+          <rect x="194" y="36" width="85" height="48" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+          <text x="202" y="52" fill="rgba(255,255,255,0.35)" font-size="6" font-family="monospace">DEFECT RATE</text>
+          <text x="202" y="72" fill="#5b8aff" font-size="20" font-family="sans-serif" font-weight="bold">18%</text>
+          <text x="202" y="82" fill="rgba(91,138,255,0.5)" font-size="6" font-family="monospace">↓ post-release</text>
+          <rect x="287" y="36" width="105" height="48" rx="2" fill="#1a1a26" stroke="rgba(13,115,119,0.2)" stroke-width="1"/>
+          <text x="295" y="52" fill="rgba(255,255,255,0.35)" font-size="6" font-family="monospace">INT'L TRANSACTIONS</text>
+          <text x="295" y="72" fill="#20c997" font-size="20" font-family="sans-serif" font-weight="bold">30%</text>
+          <text x="295" y="82" fill="rgba(240,201,110,0.5)" font-size="6" font-family="monospace">↑ success rate</text>
+          <!-- bar chart -->
+          <text x="12" y="103" fill="rgba(255,255,255,0.25)" font-size="6.5" font-family="monospace">MONTHLY ACTIVE LEARNERS</text>
+          <rect x="8" y="106" width="385" height="52" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <rect x="20" y="138" width="28" height="12" fill="rgba(13,115,119,0.3)"/>
+          <rect x="56" y="130" width="28" height="20" fill="rgba(13,115,119,0.45)"/>
+          <rect x="92" y="122" width="28" height="28" fill="rgba(13,115,119,0.55)"/>
+          <rect x="128" y="115" width="28" height="35" fill="rgba(13,115,119,0.65)"/>
+          <rect x="164" y="110" width="28" height="40" fill="rgba(13,115,119,0.75)"/>
+          <rect x="200" y="115" width="28" height="35" fill="rgba(13,115,119,0.65)"/>
+          <rect x="236" y="108" width="28" height="42" fill="rgba(13,115,119,0.8)"/>
+          <rect x="272" y="112" width="28" height="38" fill="rgba(13,115,119,0.75)"/>
+          <rect x="308" y="105" width="28" height="45" fill="rgba(62,207,142,0.8)"/>
+          <rect x="344" y="108" width="28" height="42" fill="rgba(62,207,142,0.65)"/>
+          <text x="34" y="158" fill="rgba(255,255,255,0.2)" font-size="5.5" text-anchor="middle" font-family="monospace">Apr</text>
+          <text x="70" y="158" fill="rgba(255,255,255,0.2)" font-size="5.5" text-anchor="middle" font-family="monospace">May</text>
+          <text x="106" y="158" fill="rgba(255,255,255,0.2)" font-size="5.5" text-anchor="middle" font-family="monospace">Jun</text>
+          <text x="142" y="158" fill="rgba(255,255,255,0.2)" font-size="5.5" text-anchor="middle" font-family="monospace">Jul</text>
+          <text x="178" y="158" fill="rgba(255,255,255,0.2)" font-size="5.5" text-anchor="middle" font-family="monospace">Aug</text>
+          <text x="214" y="158" fill="rgba(255,255,255,0.2)" font-size="5.5" text-anchor="middle" font-family="monospace">Sep</text>
+          <text x="250" y="158" fill="rgba(255,255,255,0.2)" font-size="5.5" text-anchor="middle" font-family="monospace">Oct</text>
+          <text x="286" y="158" fill="rgba(255,255,255,0.2)" font-size="5.5" text-anchor="middle" font-family="monospace">Nov</text>
+          <text x="322" y="158" fill="rgba(62,207,142,0.5)" font-size="5.5" text-anchor="middle" font-family="monospace">Dec</text>
+          <text x="358" y="158" fill="rgba(62,207,142,0.5)" font-size="5.5" text-anchor="middle" font-family="monospace">Jan</text>
+          <!-- platform uptime -->
+          <rect x="8" y="165" width="185" height="26" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <text x="16" y="177" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">PLATFORM UPTIME</text>
+          <text x="16" y="187" fill="#3ecf8e" font-size="8" font-family="monospace" font-weight="bold">99.2% ✓</text>
+          <rect x="200" y="165" width="193" height="26" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <text x="208" y="177" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">AI RECOMMENDATION ACCURACY</text>
+          <text x="208" y="187" fill="#14a085" font-size="8" font-family="monospace" font-weight="bold">82% satisfaction</text>
+        </svg>
+        <div class="art-overlay"><div class="art-expand">Expand ↗</div></div>
+      </div>
+      <div class="art-body">
+        <div class="art-icon-row"><div class="art-icon">📊</div><div class="art-title">KPI Dashboard</div></div>
+        <div class="art-desc">Executive-facing dashboard tracking conversion rates, onboarding efficiency, defect rates, platform uptime and AI recommendation satisfaction.</div>
+        <div class="art-tag">Power BI · Pather</div>
+      </div>
+    </div>
+
+    <!-- 4 PRD -->
+    <div class="art-card reveal" onclick="openLightbox('lb-prd')">
+      <div class="art-img-wrap">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#12121a"/>
+          <rect x="0" y="0" width="400" height="28" fill="rgba(13,115,119,0.07)"/>
+          <text x="12" y="18" fill="rgba(13,115,119,0.8)" font-size="8" font-family="monospace" font-weight="bold">PATHER · PRODUCT REQUIREMENTS DOCUMENT v1.4</text>
+          <rect x="8" y="36" width="180" height="155" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <text x="20" y="56" fill="rgba(13,115,119,0.7)" font-size="7.5" font-family="monospace" font-weight="bold">OVERVIEW</text>
+          <text x="20" y="70" fill="rgba(255,255,255,0.25)" font-size="6" font-family="monospace">Product Name: PATHER</text>
+          <text x="20" y="82" fill="rgba(255,255,255,0.25)" font-size="6" font-family="monospace">Version: 1.4</text>
+          <text x="20" y="94" fill="rgba(255,255,255,0.25)" font-size="6" font-family="monospace">Last Updated: Feb 2025</text>
+          <text x="20" y="106" fill="rgba(255,255,255,0.25)" font-size="6" font-family="monospace">PMs: Olumuyiwa-Biala,</text>
+          <text x="20" y="116" fill="rgba(13,115,119,0.6)" font-size="6" font-family="monospace">     Bamidele, Jimoh</text>
+          <line x1="16" y1="124" x2="180" y2="124" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <text x="20" y="138" fill="rgba(13,115,119,0.7)" font-size="7.5" font-family="monospace" font-weight="bold">KEY OBJECTIVES</text>
+          <text x="20" y="152" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">· Adaptive AI learning</text>
+          <text x="20" y="162" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">· Expert content creation</text>
+          <text x="20" y="172" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">· Global localisation</text>
+          <text x="20" y="182" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">· Payment processing</text>
+          <rect x="196" y="36" width="197" height="75" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <text x="208" y="54" fill="rgba(13,115,119,0.7)" font-size="7.5" font-family="monospace" font-weight="bold">SUCCESS METRICS</text>
+          <text x="208" y="68" fill="rgba(255,255,255,0.25)" font-size="6" font-family="monospace">500 experts / 3,000 learners Q1</text>
+          <text x="208" y="80" fill="rgba(255,255,255,0.25)" font-size="6" font-family="monospace">£200K revenue by Q4 2025</text>
+          <text x="208" y="92" fill="rgba(255,255,255,0.25)" font-size="6" font-family="monospace">99%+ uptime · 80% AI accuracy</text>
+          <text x="208" y="104" fill="rgba(255,255,255,0.25)" font-size="6" font-family="monospace">60% course completion rate</text>
+          <rect x="196" y="118" width="197" height="73" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <text x="208" y="134" fill="rgba(13,115,119,0.7)" font-size="7.5" font-family="monospace" font-weight="bold">MVP INITIATIVES (20+)</text>
+          <text x="208" y="148" fill="rgba(62,207,142,0.6)" font-size="6" font-family="monospace">✓ Platform Infrastructure</text>
+          <text x="208" y="158" fill="rgba(62,207,142,0.6)" font-size="6" font-family="monospace">✓ Expert &amp; Learner Onboarding</text>
+          <text x="208" y="168" fill="rgba(13,115,119,0.6)" font-size="6" font-family="monospace">⟳ NG Localisation</text>
+          <text x="208" y="178" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">○ Community Feature</text>
+          <text x="208" y="188" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">○ Explore Feature</text>
+        </svg>
+        <div class="art-overlay"><div class="art-expand">Expand ↗</div></div>
+      </div>
+      <div class="art-body">
+        <div class="art-icon-row"><div class="art-icon">📋</div><div class="art-title">Product Requirements Document</div></div>
+        <div class="art-desc">Pather PRD v1.4 — product vision, objectives, KPIs, platform features and 20+ MVP initiatives across 4 apps.</div>
+        <div class="art-tag">PRD v1.4 · Pather</div>
+      </div>
+    </div>
+
+    <!-- 5 User Stories -->
+    <div class="art-card reveal reveal-d1" onclick="openLightbox('lb-stories')">
+      <div class="art-img-wrap">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#12121a"/>
+          <rect x="0" y="0" width="400" height="28" fill="rgba(13,115,119,0.07)"/>
+          <text x="12" y="18" fill="rgba(13,115,119,0.8)" font-size="8" font-family="monospace" font-weight="bold">AZURE DEVOPS · USER STORIES</text>
+          <!-- story cards -->
+          <rect x="8" y="36" width="118" height="75" rx="2" fill="#1a1a26" stroke="rgba(62,207,142,0.3)" stroke-width="1"/>
+          <rect x="8" y="36" width="118" height="10" rx="2" fill="rgba(62,207,142,0.15)"/>
+          <text x="14" y="44" fill="rgba(62,207,142,0.8)" font-size="6" font-family="monospace">US-001 · Done ✓</text>
+          <text x="14" y="58" fill="rgba(255,255,255,0.5)" font-size="6" font-family="monospace">As a learner I want to</text>
+          <text x="14" y="68" fill="rgba(255,255,255,0.5)" font-size="6" font-family="monospace">verify my email so I</text>
+          <text x="14" y="78" fill="rgba(255,255,255,0.5)" font-size="6" font-family="monospace">can access the platform</text>
+          <line x1="14" y1="88" x2="118" y2="88" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <text x="14" y="100" fill="rgba(13,115,119,0.5)" font-size="5.5" font-family="monospace">AC: Email received within 30s</text>
+          <text x="14" y="108" fill="rgba(13,115,119,0.5)" font-size="5.5" font-family="monospace">AC: Error shown if link expired</text>
+          <rect x="134" y="36" width="118" height="75" rx="2" fill="#1a1a26" stroke="rgba(13,115,119,0.3)" stroke-width="1"/>
+          <rect x="134" y="36" width="118" height="10" rx="2" fill="rgba(13,115,119,0.12)"/>
+          <text x="140" y="44" fill="rgba(13,115,119,0.8)" font-size="6" font-family="monospace">US-002 · Done ✓</text>
+          <text x="140" y="58" fill="rgba(255,255,255,0.5)" font-size="6" font-family="monospace">As a learner I want to</text>
+          <text x="140" y="68" fill="rgba(255,255,255,0.5)" font-size="6" font-family="monospace">complete onboarding so</text>
+          <text x="140" y="78" fill="rgba(255,255,255,0.5)" font-size="6" font-family="monospace">I get recommendations</text>
+          <line x1="140" y1="88" x2="244" y2="88" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <text x="140" y="100" fill="rgba(13,115,119,0.5)" font-size="5.5" font-family="monospace">AC: Career details saved</text>
+          <text x="140" y="108" fill="rgba(13,115,119,0.5)" font-size="5.5" font-family="monospace">AC: Skip option available</text>
+          <rect x="260" y="36" width="132" height="75" rx="2" fill="#1a1a26" stroke="rgba(91,138,255,0.3)" stroke-width="1"/>
+          <rect x="260" y="36" width="132" height="10" rx="2" fill="rgba(91,138,255,0.1)"/>
+          <text x="266" y="44" fill="rgba(91,138,255,0.8)" font-size="6" font-family="monospace">US-012 · In Progress ⟳</text>
+          <text x="266" y="58" fill="rgba(255,255,255,0.5)" font-size="6" font-family="monospace">As an expert I want to</text>
+          <text x="266" y="68" fill="rgba(255,255,255,0.5)" font-size="6" font-family="monospace">set my timezone so</text>
+          <text x="266" y="78" fill="rgba(255,255,255,0.5)" font-size="6" font-family="monospace">events show correctly</text>
+          <line x1="266" y1="88" x2="384" y2="88" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <text x="266" y="100" fill="rgba(13,115,119,0.5)" font-size="5.5" font-family="monospace">AC: DST handled automatically</text>
+          <text x="266" y="108" fill="rgba(13,115,119,0.5)" font-size="5.5" font-family="monospace">AC: UTC offset displayed</text>
+          <!-- unhappy path tag -->
+          <rect x="8" y="120" width="384" height="72" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <text x="16" y="136" fill="rgba(255,107,107,0.7)" font-size="7" font-family="monospace" font-weight="bold">UNHAPPY PATH COVERAGE</text>
+          <text x="16" y="150" fill="rgba(255,255,255,0.25)" font-size="6" font-family="monospace">· Verification email not received → show resend option after 60s</text>
+          <text x="16" y="162" fill="rgba(255,255,255,0.25)" font-size="6" font-family="monospace">· Session expired → auto sign-in triggered, no data loss</text>
+          <text x="16" y="174" fill="rgba(255,255,255,0.25)" font-size="6" font-family="monospace">· Onboarding skipped → AI recommendations use defaults</text>
+          <text x="16" y="186" fill="rgba(255,255,255,0.25)" font-size="6" font-family="monospace">· Invalid timezone → fallback to UTC with user prompt</text>
+        </svg>
+        <div class="art-overlay"><div class="art-expand">Expand ↗</div></div>
+      </div>
+      <div class="art-body">
+        <div class="art-icon-row"><div class="art-icon">📝</div><div class="art-title">User Stories & Acceptance Criteria</div></div>
+        <div class="art-desc">Structured user stories in Azure DevOps covering happy and unhappy paths — directly contributing to 18% reduction in post-release defects.</div>
+        <div class="art-tag">Azure DevOps · Pather</div>
+      </div>
+    </div>
+
+    <!-- 6 Roadmap -->
+    <div class="art-card reveal reveal-d2" onclick="openLightbox('lb-roadmap')">
+      <div class="art-img-wrap">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#12121a"/>
+          <rect x="0" y="0" width="400" height="28" fill="rgba(13,115,119,0.07)"/>
+          <text x="12" y="18" fill="rgba(13,115,119,0.8)" font-size="8" font-family="monospace" font-weight="bold">PATHER · PRODUCT ROADMAP 2024–2025</text>
+          <!-- timeline axis -->
+          <line x1="10" y1="50" x2="390" y2="50" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+          <text x="30" y="45" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">Q2 2024</text>
+          <text x="120" y="45" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">Q3</text>
+          <text x="200" y="45" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">Q4</text>
+          <text x="280" y="45" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">Q1 2025</text>
+          <text x="350" y="45" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">Q2</text>
+          <line x1="100" y1="40" x2="100" y2="195" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <line x1="190" y1="40" x2="190" y2="195" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <line x1="270" y1="40" x2="270" y2="195" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <line x1="340" y1="40" x2="340" y2="195" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <!-- swim lanes with bars -->
+          <text x="10" y="68" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">INFRA</text>
+          <rect x="10" y="56" width="90" height="14" rx="2" fill="rgba(62,207,142,0.4)"/>
+          <text x="15" y="66" fill="rgba(255,255,255,0.7)" font-size="6" font-family="monospace">Infrastructure Setup ✓</text>
+          <text x="10" y="88" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">ONBOARD</text>
+          <rect x="10" y="76" width="180" height="14" rx="2" fill="rgba(62,207,142,0.35)"/>
+          <text x="15" y="86" fill="rgba(255,255,255,0.7)" font-size="6" font-family="monospace">Expert + Learner Onboarding ✓</text>
+          <text x="10" y="108" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">CONTENT</text>
+          <rect x="100" y="96" width="170" height="14" rx="2" fill="rgba(62,207,142,0.35)"/>
+          <text x="105" y="106" fill="rgba(255,255,255,0.7)" font-size="6" font-family="monospace">AI Course, Quizzes, Expert Wallet ✓</text>
+          <text x="10" y="128" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">PAYMENTS</text>
+          <rect x="190" y="116" width="150" height="14" rx="2" fill="rgba(62,207,142,0.3)"/>
+          <text x="195" y="126" fill="rgba(255,255,255,0.7)" font-size="6" font-family="monospace">Multi-currency + Social Sign-Up ✓</text>
+          <text x="10" y="148" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">AI/ML</text>
+          <rect x="270" y="136" width="120" height="14" rx="2" fill="rgba(13,115,119,0.4)"/>
+          <text x="275" y="146" fill="rgba(255,255,255,0.7)" font-size="6" font-family="monospace">Adaptive Learning + NG Locale ⟳</text>
+          <text x="10" y="168" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">COMMUNITY</text>
+          <rect x="340" y="156" width="55" height="14" rx="2" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="3,2"/>
+          <text x="345" y="166" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Community ○</text>
+          <!-- legend -->
+          <rect x="10" y="180" width="10" height="8" rx="1" fill="rgba(62,207,142,0.4)"/>
+          <text x="24" y="188" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Completed</text>
+          <rect x="100" y="180" width="10" height="8" rx="1" fill="rgba(13,115,119,0.4)"/>
+          <text x="114" y="188" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">In Progress</text>
+          <rect x="200" y="180" width="10" height="8" rx="1" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="2,2"/>
+          <text x="214" y="188" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Not Started</text>
+        </svg>
+        <div class="art-overlay"><div class="art-expand">Expand ↗</div></div>
+      </div>
+      <div class="art-body">
+        <div class="art-icon-row"><div class="art-icon">🛣️</div><div class="art-title">Product Roadmap</div></div>
+        <div class="art-desc">20+ MVP initiatives from Q2 2024 through Q2 2025 across Expert, Learner, Admin and Website apps — aligned to commercial KPIs.</div>
+        <div class="art-tag">PRD v1.4 · Azure DevOps</div>
+      </div>
+    </div>
+
+    <!-- 7 BRD -->
+    <div class="art-card reveal" onclick="openLightbox('lb-brd')">
+      <div class="art-img-wrap">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#12121a"/>
+          <rect x="0" y="0" width="400" height="28" fill="rgba(13,115,119,0.07)"/>
+          <text x="12" y="18" fill="rgba(13,115,119,0.8)" font-size="8" font-family="monospace" font-weight="bold">VENTUREREG · BUSINESS REQUIREMENTS DOCUMENT</text>
+          <rect x="8" y="36" width="384" height="155" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <text x="20" y="56" fill="rgba(13,115,119,0.7)" font-size="7" font-family="monospace" font-weight="bold">1. EXECUTIVE SUMMARY</text>
+          <text x="20" y="68" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">Redesign compliance onboarding to reduce manual review effort by 45% through AI document</text>
+          <text x="20" y="78" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">validation and automated rule-based decision logic across global registration workflows.</text>
+          <line x1="16" y1="88" x2="384" y2="88" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <text x="20" y="102" fill="rgba(13,115,119,0.7)" font-size="7" font-family="monospace" font-weight="bold">2. FUNCTIONAL REQUIREMENTS</text>
+          <text x="20" y="114" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">FR-01  System shall auto-validate uploaded documents against jurisdiction-specific rules</text>
+          <text x="20" y="124" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">FR-02  System shall pre-populate registration fields from validated document data</text>
+          <text x="20" y="134" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">FR-03  System shall route incomplete submissions to manual review queue with priority flag</text>
+          <text x="20" y="144" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">FR-04  System shall generate audit trail for every decision (auto + manual)</text>
+          <line x1="16" y1="154" x2="384" y2="154" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <text x="20" y="166" fill="rgba(13,115,119,0.7)" font-size="7" font-family="monospace" font-weight="bold">3. TRACEABILITY MATRIX</text>
+          <text x="20" y="178" fill="rgba(62,207,142,0.6)" font-size="6" font-family="monospace">FR-01 → US-201 → TC-301 ✓  |  FR-02 → US-202 → TC-302 ✓  |  FR-03 → US-203 → TC-303 ✓</text>
+          <text x="20" y="188" fill="rgba(62,207,142,0.4)" font-size="6" font-family="monospace">100% requirements traced · Audit-ready · Regulatory compliant</text>
+        </svg>
+        <div class="art-overlay"><div class="art-expand">Expand ↗</div></div>
+      </div>
+      <div class="art-body">
+        <div class="art-icon-row"><div class="art-icon">📑</div><div class="art-title">Business Requirements Document</div></div>
+        <div class="art-desc">VentureReg BRD with functional requirements, traceability matrix and regulatory compliance — achieving 100% audit-readiness.</div>
+        <div class="art-tag">VentureReg · Compliance</div>
+      </div>
+    </div>
+
+    <!-- 8 UAT -->
+    <div class="art-card reveal reveal-d1" onclick="openLightbox('lb-uat')">
+      <div class="art-img-wrap">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#12121a"/>
+          <rect x="0" y="0" width="400" height="28" fill="rgba(13,115,119,0.07)"/>
+          <text x="12" y="18" fill="rgba(13,115,119,0.8)" font-size="8" font-family="monospace" font-weight="bold">PATHER · UAT TRACKER — RELEASE 3</text>
+          <!-- table header -->
+          <rect x="8" y="36" width="384" height="16" rx="0" fill="rgba(13,115,119,0.1)"/>
+          <text x="14" y="47" fill="rgba(13,115,119,0.7)" font-size="6.5" font-family="monospace">TEST ID</text>
+          <text x="70" y="47" fill="rgba(13,115,119,0.7)" font-size="6.5" font-family="monospace">SCENARIO</text>
+          <text x="240" y="47" fill="rgba(13,115,119,0.7)" font-size="6.5" font-family="monospace">EXPECTED</text>
+          <text x="315" y="47" fill="rgba(13,115,119,0.7)" font-size="6.5" font-family="monospace">ACTUAL</text>
+          <text x="360" y="47" fill="rgba(13,115,119,0.7)" font-size="6.5" font-family="monospace">STATUS</text>
+          <!-- rows -->
+          <rect x="8" y="52" width="384" height="18" fill="rgba(255,255,255,0.015)"/>
+          <text x="14" y="64" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">TC-001</text>
+          <text x="70" y="64" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Email verify - happy path</text>
+          <text x="240" y="64" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Link works</text>
+          <text x="315" y="64" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Link works</text>
+          <text x="360" y="64" fill="#3ecf8e" font-size="6" font-family="monospace">PASS ✓</text>
+          <rect x="8" y="70" width="384" height="18" fill="rgba(255,255,255,0.0)"/>
+          <text x="14" y="82" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">TC-002</text>
+          <text x="70" y="82" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Resend link after 60s</text>
+          <text x="240" y="82" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Button shows at 60s</text>
+          <text x="315" y="82" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Button shows</text>
+          <text x="360" y="82" fill="#3ecf8e" font-size="6" font-family="monospace">PASS ✓</text>
+          <rect x="8" y="88" width="384" height="18" fill="rgba(255,255,255,0.015)"/>
+          <text x="14" y="100" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">TC-003</text>
+          <text x="70" y="100" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Skip onboarding</text>
+          <text x="240" y="100" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Full access granted</text>
+          <text x="315" y="100" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Full access</text>
+          <text x="360" y="100" fill="#3ecf8e" font-size="6" font-family="monospace">PASS ✓</text>
+          <rect x="8" y="106" width="384" height="18" fill="rgba(255,255,255,0.0)"/>
+          <text x="14" y="118" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">TC-004</text>
+          <text x="70" y="118" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Expired verify link</text>
+          <text x="240" y="118" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Error shown</text>
+          <text x="315" y="118" fill="rgba(255,107,107,0.7)" font-size="6" font-family="monospace">No error</text>
+          <text x="360" y="118" fill="#ff6b6b" font-size="6" font-family="monospace">DEFECT ✗</text>
+          <rect x="8" y="124" width="384" height="18" fill="rgba(255,255,255,0.015)"/>
+          <text x="14" y="136" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">TC-005</text>
+          <text x="70" y="136" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">DST timezone auto-detect</text>
+          <text x="240" y="136" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">UTC+1 → UTC displayed</text>
+          <text x="315" y="136" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">UTC+1 shown</text>
+          <text x="360" y="136" fill="#3ecf8e" font-size="6" font-family="monospace">PASS ✓</text>
+          <!-- summary -->
+          <rect x="8" y="152" width="384" height="40" rx="2" fill="rgba(62,207,142,0.05)" stroke="rgba(62,207,142,0.15)" stroke-width="1"/>
+          <text x="20" y="168" fill="rgba(62,207,142,0.8)" font-size="7" font-family="monospace" font-weight="bold">RELEASE SUMMARY</text>
+          <text x="20" y="182" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Total: 38 tests · Pass: 35 · Defects: 3 · Resolved: 3 · Deployment: ON TIME ✓ · 100% sign-off</text>
+        </svg>
+        <div class="art-overlay"><div class="art-expand">Expand ↗</div></div>
+      </div>
+      <div class="art-body">
+        <div class="art-icon-row"><div class="art-icon">✅</div><div class="art-title">UAT Plan & Test Tracker</div></div>
+        <div class="art-desc">Coordinated UAT across 3 major Pather releases — 38 test cases, defect resolution and 100% on-time deployment sign-off.</div>
+        <div class="art-tag">Pather · VentureReg</div>
+      </div>
+    </div>
+
+    <!-- 9 Business Case -->
+    <div class="art-card reveal reveal-d2" onclick="openLightbox('lb-bc')">
+      <div class="art-img-wrap">
+        <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="200" fill="#12121a"/>
+          <rect x="0" y="0" width="400" height="28" fill="rgba(13,115,119,0.07)"/>
+          <text x="12" y="18" fill="rgba(13,115,119,0.8)" font-size="8" font-family="monospace" font-weight="bold">EXTREME MFG · BUSINESS CASE &amp; GAP ANALYSIS</text>
+          <!-- gap analysis table -->
+          <rect x="8" y="36" width="384" height="16" fill="rgba(13,115,119,0.08)"/>
+          <text x="14" y="47" fill="rgba(13,115,119,0.6)" font-size="6.5" font-family="monospace">PROCESS AREA</text>
+          <text x="140" y="47" fill="rgba(13,115,119,0.6)" font-size="6.5" font-family="monospace">AS IS</text>
+          <text x="220" y="47" fill="rgba(13,115,119,0.6)" font-size="6.5" font-family="monospace">TO BE</text>
+          <text x="310" y="47" fill="rgba(13,115,119,0.6)" font-size="6.5" font-family="monospace">GAP / ACTION</text>
+          <text x="14" y="66" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Quality Control</text>
+          <text x="140" y="66" fill="rgba(255,107,107,0.6)" font-size="6" font-family="monospace">Manual checks</text>
+          <text x="220" y="66" fill="rgba(62,207,142,0.6)" font-size="6" font-family="monospace">Automated alerts</text>
+          <text x="310" y="66" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">System upgrade</text>
+          <line x1="8" y1="72" x2="392" y2="72" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <text x="14" y="84" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Incident Reporting</text>
+          <text x="140" y="84" fill="rgba(255,107,107,0.6)" font-size="6" font-family="monospace">Paper-based</text>
+          <text x="220" y="84" fill="rgba(62,207,142,0.6)" font-size="6" font-family="monospace">Digital dashboard</text>
+          <text x="310" y="84" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">KPI platform</text>
+          <line x1="8" y1="90" x2="392" y2="90" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+          <text x="14" y="102" fill="rgba(255,255,255,0.3)" font-size="6" font-family="monospace">Audit Readiness</text>
+          <text x="140" y="102" fill="rgba(255,107,107,0.6)" font-size="6" font-family="monospace">Ad hoc</text>
+          <text x="220" y="102" fill="rgba(62,207,142,0.6)" font-size="6" font-family="monospace">Continuous tracking</text>
+          <text x="310" y="102" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">Process redesign</text>
+          <!-- cost benefit -->
+          <rect x="8" y="116" width="384" height="76" rx="2" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <text x="20" y="132" fill="rgba(13,115,119,0.7)" font-size="7" font-family="monospace" font-weight="bold">COST-BENEFIT ANALYSIS</text>
+          <text x="20" y="148" fill="rgba(255,255,255,0.2)" font-size="6" font-family="monospace">Investment: Process redesign + digital tooling</text>
+          <text x="20" y="160" fill="rgba(62,207,142,0.5)" font-size="6" font-family="monospace">Benefit: 15% reduction in non-conformances · 32% fewer reportable incidents</text>
+          <text x="20" y="172" fill="rgba(62,207,142,0.5)" font-size="6" font-family="monospace">Benefit: Improved audit readiness · Reduced regulatory exposure</text>
+          <text x="20" y="184" fill="rgba(13,115,119,0.5)" font-size="6" font-family="monospace">ROI: Quantified cost savings from incident reduction + compliance efficiency gains</text>
+        </svg>
+        <div class="art-overlay"><div class="art-expand">Expand ↗</div></div>
+      </div>
+      <div class="art-body">
+        <div class="art-icon-row"><div class="art-icon">💡</div><div class="art-title">Business Case & Gap Analysis</div></div>
+        <div class="art-desc">Gap analysis and cost-benefit assessment for Extreme Manufacturing — supporting capital investment decisions and driving 15% non-conformance reduction.</div>
+        <div class="art-tag">Extreme Manufacturing</div>
+      </div>
+    </div>
+
+  </div><!-- end art-grid -->
+</section>
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="sec-label reveal" style="justify-content:center;">Get In Touch</div>
+    <h2 class="reveal">Let's Work Together</h2>
+    <p class="sec-intro reveal" style="margin:0 auto 0;text-align:center;">Open to new BA and PM opportunities in the UK. Let's talk about how I can add value to your next product.</p>
+    <div class="contact-links reveal">
+      <a href="javascript:void(0)" onclick="window.location.href='mailto:'+'Adeoluwa.bamidele'+'@'+'gmail.com'" class="cl">✉ &nbsp;Adeoluwa&#46;bamidele&#64;gmail&#46;com</a>
+      <a href="https://www.linkedin.com/in/adeoluwa-bamidele/" target="_blank" class="cl">💼 &nbsp;LinkedIn ↗</a>
+      <a href="tel:+447407256368" class="cl">📞 &nbsp;+44 7407 256368</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fc">© 2025 Adeoluwa Bamidele · Business Analyst & Product Manager · London, UK</div>
+  <div class="fl">AB.</div>
+</footer>
+
+<!-- LIGHTBOXES -->
+<div class="lightbox" id="lb-flow"><div class="lb-inner"><div class="lb-header"><div class="lb-title">Process Flow Map — Learner Onboarding</div><button class="lb-close" onclick="closeLightbox('lb-flow')">✕</button></div><div class="lb-body"><svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" style="background:#12121a;padding:1rem"><rect width="800" height="350" fill="#12121a"/><text x="20" y="30" fill="rgba(13,115,119,0.8)" font-size="12" font-family="monospace" font-weight="bold">LEARNER ONBOARDING PROCESS FLOW — PATHER</text><text x="20" y="46" fill="rgba(255,255,255,0.3)" font-size="9" font-family="monospace">Happy Path + Exception Paths · AS IS → TO BE Redesign</text><line x1="0" y1="55" x2="800" y2="55" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><rect x="20" y="75" width="70" height="28" rx="2" fill="#1a1a26" stroke="rgba(13,115,119,0.4)" stroke-width="1"/><text x="55" y="93" fill="#14a085" font-size="9" text-anchor="middle" font-family="monospace">Start</text><line x1="90" y1="89" x2="120" y2="89" stroke="#14a085" stroke-width="1.5"/><rect x="120" y="75" width="90" height="28" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.15)" stroke-width="1"/><text x="165" y="87" fill="rgba(255,255,255,0.7)" font-size="8.5" text-anchor="middle" font-family="monospace">Sign up</text><text x="165" y="98" fill="rgba(255,255,255,0.7)" font-size="8.5" text-anchor="middle" font-family="monospace">Email &amp; PW</text><line x1="210" y1="89" x2="240" y2="89" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><rect x="240" y="75" width="90" height="28" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.15)" stroke-width="1"/><text x="285" y="93" fill="rgba(255,255,255,0.7)" font-size="8.5" text-anchor="middle" font-family="monospace">Account created</text><line x1="330" y1="89" x2="360" y2="89" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><rect x="360" y="75" width="100" height="28" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.15)" stroke-width="1"/><text x="410" y="87" fill="rgba(255,255,255,0.7)" font-size="8.5" text-anchor="middle" font-family="monospace">Verification</text><text x="410" y="98" fill="rgba(255,255,255,0.7)" font-size="8.5" text-anchor="middle" font-family="monospace">email sent</text><line x1="460" y1="89" x2="490" y2="89" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><polygon points="520,75 555,89 520,103 485,89" fill="#1a1a26" stroke="rgba(13,115,119,0.5)" stroke-width="1.5"/><text x="520" y="93" fill="#20c997" font-size="8.5" text-anchor="middle" font-family="monospace">Email verified?</text><line x1="555" y1="89" x2="585" y2="89" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><text x="568" y="83" fill="#3ecf8e" font-size="8" font-family="monospace">YES</text><rect x="585" y="75" width="95" height="28" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.15)" stroke-width="1"/><text x="632" y="87" fill="rgba(255,255,255,0.7)" font-size="8.5" text-anchor="middle" font-family="monospace">Verification</text><text x="632" y="98" fill="rgba(255,255,255,0.7)" font-size="8.5" text-anchor="middle" font-family="monospace">success page</text><line x1="520" y1="103" x2="520" y2="135" stroke="rgba(255,107,107,0.5)" stroke-width="1.5"/><text x="528" y="122" fill="#ff6b6b" font-size="8" font-family="monospace">NO</text><rect x="440" y="135" width="110" height="28" rx="2" fill="#1a1a26" stroke="rgba(255,107,107,0.3)" stroke-width="1"/><text x="495" y="147" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle" font-family="monospace">Show check inbox</text><text x="495" y="158" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle" font-family="monospace">message</text><line x1="550" y1="149" x2="610" y2="149" stroke="rgba(255,107,107,0.4)" stroke-width="1"/><rect x="610" y="135" width="110" height="28" rx="2" fill="#1a1a26" stroke="rgba(255,107,107,0.25)" stroke-width="1"/><text x="665" y="147" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle" font-family="monospace">Resend</text><text x="665" y="158" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle" font-family="monospace">verification link ↺</text><polygon points="210,185 250,200 210,215 170,200" fill="#1a1a26" stroke="rgba(13,115,119,0.5)" stroke-width="1.5"/><text x="210" y="204" fill="#20c997" font-size="8" text-anchor="middle" font-family="monospace">Session active?</text><line x1="250" y1="200" x2="285" y2="200" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><text x="266" y="194" fill="#3ecf8e" font-size="8" font-family="monospace">YES</text><rect x="285" y="186" width="90" height="28" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.15)" stroke-width="1"/><text x="330" y="204" fill="rgba(255,255,255,0.7)" font-size="8.5" text-anchor="middle" font-family="monospace">Learner Hub</text><text x="210" y="214" fill="#ff6b6b" font-size="8" text-anchor="middle" font-family="monospace">NO ↓</text><rect x="150" y="230" width="120" height="28" rx="2" fill="#1a1a26" stroke="rgba(255,107,107,0.25)" stroke-width="1"/><text x="210" y="248" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle" font-family="monospace">Auto sign in → Hub</text><polygon points="460,185 500,200 460,215 420,200" fill="#1a1a26" stroke="rgba(13,115,119,0.5)" stroke-width="1.5"/><text x="460" y="204" fill="#20c997" font-size="8" text-anchor="middle" font-family="monospace">Onboarding done?</text><line x1="500" y1="200" x2="540" y2="200" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><text x="518" y="194" fill="#3ecf8e" font-size="8" font-family="monospace">YES</text><rect x="540" y="186" width="110" height="28" rx="2" fill="#1a1a26" stroke="rgba(62,207,142,0.5)" stroke-width="1.5"/><text x="595" y="198" fill="#3ecf8e" font-size="8.5" text-anchor="middle" font-family="monospace">Full Account</text><text x="595" y="209" fill="#3ecf8e" font-size="8.5" text-anchor="middle" font-family="monospace">Access ✓</text><text x="460" y="214" fill="#ff6b6b" font-size="8" text-anchor="middle" font-family="monospace">NO ↓</text><rect x="360" y="240" width="90" height="24" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="405" y="256" fill="rgba(255,255,255,0.5)" font-size="7.5" text-anchor="middle" font-family="monospace">Onboard form</text><line x1="450" y1="252" x2="475" y2="252" stroke="rgba(255,255,255,0.2)" stroke-width="1"/><rect x="475" y="240" width="80" height="24" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="515" y="256" fill="rgba(255,255,255,0.5)" font-size="7.5" text-anchor="middle" font-family="monospace">Career details</text><line x1="555" y1="252" x2="580" y2="252" stroke="rgba(255,255,255,0.2)" stroke-width="1"/><rect x="580" y="240" width="80" height="24" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><text x="620" y="252" fill="rgba(255,255,255,0.5)" font-size="7.5" text-anchor="middle" font-family="monospace">Location</text><text x="620" y="261" fill="rgba(255,255,255,0.5)" font-size="7.5" text-anchor="middle" font-family="monospace">details</text><line x1="660" y1="252" x2="685" y2="252" stroke="rgba(255,255,255,0.2)" stroke-width="1"/><rect x="685" y="240" width="95" height="24" rx="2" fill="#1a1a26" stroke="rgba(62,207,142,0.4)" stroke-width="1"/><text x="732" y="256" fill="#3ecf8e" font-size="7.5" text-anchor="middle" font-family="monospace">Full Access ✓</text><rect x="20" y="310" width="10" height="10" fill="rgba(62,207,142,0.4)"/><text x="36" y="319" fill="rgba(255,255,255,0.3)" font-size="7.5" font-family="monospace">Happy path</text><rect x="130" y="310" width="10" height="10" fill="rgba(255,107,107,0.4)"/><text x="146" y="319" fill="rgba(255,255,255,0.3)" font-size="7.5" font-family="monospace">Exception / unhappy path</text><rect x="300" y="310" width="10" height="10" fill="#1a1a26" stroke="rgba(13,115,119,0.5)" stroke-width="1"/><text x="316" y="319" fill="rgba(255,255,255,0.3)" font-size="7.5" font-family="monospace">Decision point</text></svg></div></div></div>
+
+<div class="lightbox" id="lb-journey"><div class="lb-inner"><div class="lb-header"><div class="lb-title">User Journey Map — Learner Onboarding</div><button class="lb-close" onclick="closeLightbox('lb-journey')">✕</button></div><div class="lb-body"><svg viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg" style="background:#12121a"><rect width="800" height="380" fill="#12121a"/><text x="20" y="28" fill="rgba(13,115,119,0.8)" font-size="13" font-family="monospace" font-weight="bold">LEARNER ONBOARDING — USER JOURNEY MAP</text><text x="20" y="44" fill="rgba(255,255,255,0.3)" font-size="9" font-family="monospace">Pather Platform · Mapped in Miro · 5 stages · Emotion tracking</text><line x1="0" y1="54" x2="800" y2="54" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><rect x="0" y="54" width="800" height="28" fill="rgba(13,115,119,0.06)"/><text x="80" y="72" fill="rgba(13,115,119,0.6)" font-size="9" text-anchor="middle" font-family="monospace">DISCOVER</text><text x="240" y="72" fill="rgba(13,115,119,0.6)" font-size="9" text-anchor="middle" font-family="monospace">SIGN UP</text><text x="400" y="72" fill="rgba(13,115,119,0.6)" font-size="9" text-anchor="middle" font-family="monospace">ONBOARD</text><text x="560" y="72" fill="rgba(13,115,119,0.6)" font-size="9" text-anchor="middle" font-family="monospace">EXPLORE</text><text x="720" y="72" fill="rgba(62,207,142,0.7)" font-size="9" text-anchor="middle" font-family="monospace">ENROL</text><line x1="160" y1="54" x2="160" y2="380" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="320" y1="54" x2="320" y2="380" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="480" y1="54" x2="480" y2="380" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="640" y1="54" x2="640" y2="380" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><text x="20" y="105" fill="rgba(255,255,255,0.2)" font-size="8" font-family="monospace">TOUCHPOINTS</text><circle cx="80" cy="120" r="18" fill="rgba(13,115,119,0.1)" stroke="rgba(13,115,119,0.4)" stroke-width="1.5"/><text x="80" y="125" fill="#14a085" font-size="16" text-anchor="middle">🌐</text><text x="80" y="148" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle" font-family="monospace">Homepage</text><text x="80" y="158" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle" font-family="monospace">pather.co</text><circle cx="240" cy="120" r="18" fill="rgba(13,115,119,0.1)" stroke="rgba(13,115,119,0.4)" stroke-width="1.5"/><text x="240" y="125" fill="#14a085" font-size="16" text-anchor="middle">✉</text><text x="240" y="148" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle" font-family="monospace">Email verify</text><text x="240" y="158" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle" font-family="monospace">Inbox check</text><circle cx="400" cy="120" r="18" fill="rgba(13,115,119,0.1)" stroke="rgba(13,115,119,0.4)" stroke-width="1.5"/><text x="400" y="125" fill="#14a085" font-size="16" text-anchor="middle">👤</text><text x="400" y="148" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle" font-family="monospace">Profile setup</text><text x="400" y="158" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle" font-family="monospace">Career · Location</text><circle cx="560" cy="120" r="18" fill="rgba(13,115,119,0.1)" stroke="rgba(13,115,119,0.4)" stroke-width="1.5"/><text x="560" y="125" fill="#14a085" font-size="16" text-anchor="middle">🔍</text><text x="560" y="148" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle" font-family="monospace">Browse courses</text><text x="560" y="158" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle" font-family="monospace">AI recommendations</text><circle cx="720" cy="120" r="18" fill="rgba(62,207,142,0.1)" stroke="rgba(62,207,142,0.5)" stroke-width="1.5"/><text x="720" y="125" fill="#3ecf8e" font-size="16" text-anchor="middle">🎉</text><text x="720" y="148" fill="rgba(62,207,142,0.7)" font-size="8" text-anchor="middle" font-family="monospace">Course enrolled!</text><text x="720" y="158" fill="rgba(62,207,142,0.5)" font-size="7" text-anchor="middle" font-family="monospace">Success state</text><polyline points="80,120 240,120 400,120 560,120 720,120" fill="none" stroke="rgba(13,115,119,0.2)" stroke-width="1.5" stroke-dasharray="6,4"/><text x="20" y="185" fill="rgba(255,255,255,0.2)" font-size="8" font-family="monospace">EMOTION</text><text x="80" y="210" font-size="22" text-anchor="middle">😐</text><text x="80" y="228" fill="rgba(255,255,255,0.25)" font-size="7.5" text-anchor="middle" font-family="monospace">Curious</text><text x="240" y="210" font-size="22" text-anchor="middle">😤</text><text x="240" y="228" fill="rgba(255,255,255,0.25)" font-size="7.5" text-anchor="middle" font-family="monospace">Frustrated</text><text x="400" y="210" font-size="22" text-anchor="middle">😊</text><text x="400" y="228" fill="rgba(255,255,255,0.25)" font-size="7.5" text-anchor="middle" font-family="monospace">Satisfied</text><text x="560" y="210" font-size="22" text-anchor="middle">😃</text><text x="560" y="228" fill="rgba(255,255,255,0.25)" font-size="7.5" text-anchor="middle" font-family="monospace">Excited</text><text x="720" y="210" font-size="22" text-anchor="middle">🎉</text><text x="720" y="228" fill="rgba(255,255,255,0.25)" font-size="7.5" text-anchor="middle" font-family="monospace">Delighted</text><text x="20" y="255" fill="rgba(255,255,255,0.2)" font-size="8" font-family="monospace">PAIN POINTS</text><rect x="170" y="260" width="145" height="30" rx="2" fill="rgba(255,107,107,0.07)" stroke="rgba(255,107,107,0.2)" stroke-width="1"/><text x="242" y="274" fill="rgba(255,107,107,0.7)" font-size="8" text-anchor="middle" font-family="monospace">Verify friction · email delay</text><text x="242" y="284" fill="rgba(255,107,107,0.5)" font-size="7" text-anchor="middle" font-family="monospace">Drop-off hotspot identified</text><rect x="330" y="260" width="145" height="30" rx="2" fill="rgba(255,107,107,0.06)" stroke="rgba(255,107,107,0.15)" stroke-width="1"/><text x="402" y="274" fill="rgba(255,107,107,0.6)" font-size="8" text-anchor="middle" font-family="monospace">Form abandonment risk</text><text x="402" y="284" fill="rgba(255,107,107,0.4)" font-size="7" text-anchor="middle" font-family="monospace">Skip option added</text><text x="20" y="315" fill="rgba(255,255,255,0.2)" font-size="8" font-family="monospace">OPPORTUNITIES</text><rect x="20" y="322" width="175" height="40" rx="2" fill="rgba(62,207,142,0.05)" stroke="rgba(62,207,142,0.15)" stroke-width="1"/><text x="30" y="336" fill="rgba(62,207,142,0.7)" font-size="7.5" font-family="monospace">· Auto resend after 60s</text><text x="30" y="348" fill="rgba(62,207,142,0.7)" font-size="7.5" font-family="monospace">· Progress indicator on form</text><text x="30" y="360" fill="rgba(62,207,142,0.7)" font-size="7.5" font-family="monospace">· Skip option reduces friction</text><rect x="210" y="322" width="175" height="40" rx="2" fill="rgba(62,207,142,0.05)" stroke="rgba(62,207,142,0.15)" stroke-width="1"/><text x="220" y="336" fill="rgba(62,207,142,0.7)" font-size="7.5" font-family="monospace">· AI defaults on skip</text><text x="220" y="348" fill="rgba(62,207,142,0.7)" font-size="7.5" font-family="monospace">· Personalised Hub on entry</text><text x="220" y="360" fill="rgba(62,207,142,0.7)" font-size="7.5" font-family="monospace">· Celebration on enrolment</text><rect x="400" y="322" width="370" height="40" rx="2" fill="rgba(13,115,119,0.05)" stroke="rgba(13,115,119,0.15)" stroke-width="1"/><text x="410" y="336" fill="rgba(13,115,119,0.7)" font-size="7.5" font-family="monospace">OUTCOME: 35% reduction in onboarding time · 22% increase in conversion rate</text><text x="410" y="352" fill="rgba(13,115,119,0.5)" font-size="7.5" font-family="monospace">18% reduction in post-release defects · 100% on-time UAT delivery</text></svg></div></div></div>
+
+<div class="lightbox" id="lb-kpi"><div class="lb-inner"><div class="lb-header"><div class="lb-title">KPI Dashboard — Pather Platform</div><button class="lb-close" onclick="closeLightbox('lb-kpi')">✕</button></div><div class="lb-body"><svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" style="background:#12121a"><rect width="800" height="420" fill="#12121a"/><rect x="0" y="0" width="800" height="36" fill="rgba(13,115,119,0.07)"/><text x="20" y="23" fill="rgba(13,115,119,0.9)" font-size="13" font-family="monospace" font-weight="bold">PATHER · EXECUTIVE KPI DASHBOARD</text><text x="600" y="23" fill="rgba(255,255,255,0.25)" font-size="9" font-family="monospace">Power BI · Q4 2025</text><rect x="10" y="46" width="180" height="72" rx="2" fill="#1a1a26" stroke="rgba(62,207,142,0.25)" stroke-width="1"/><text x="20" y="64" fill="rgba(255,255,255,0.3)" font-size="8" font-family="monospace">CONVERSION RATE</text><text x="20" y="95" fill="#3ecf8e" font-size="36" font-family="sans-serif" font-weight="bold">22%</text><text x="20" y="112" fill="rgba(62,207,142,0.5)" font-size="8" font-family="monospace">↑ from 14% · +8pp improvement</text><rect x="200" y="46" width="180" height="72" rx="2" fill="#1a1a26" stroke="rgba(13,115,119,0.25)" stroke-width="1"/><text x="210" y="64" fill="rgba(255,255,255,0.3)" font-size="8" font-family="monospace">ONBOARDING TIME</text><text x="210" y="95" fill="#14a085" font-size="36" font-family="sans-serif" font-weight="bold">35%</text><text x="210" y="112" fill="rgba(13,115,119,0.5)" font-size="8" font-family="monospace">↓ reduction in completion time</text><rect x="390" y="46" width="180" height="72" rx="2" fill="#1a1a26" stroke="rgba(91,138,255,0.25)" stroke-width="1"/><text x="400" y="64" fill="rgba(255,255,255,0.3)" font-size="8" font-family="monospace">POST-RELEASE DEFECTS</text><text x="400" y="95" fill="#5b8aff" font-size="36" font-family="sans-serif" font-weight="bold">18%</text><text x="400" y="112" fill="rgba(91,138,255,0.5)" font-size="8" font-family="monospace">↓ through UAT improvement</text><rect x="580" y="46" width="210" height="72" rx="2" fill="#1a1a26" stroke="rgba(240,201,110,0.3)" stroke-width="1.5"/><text x="590" y="64" fill="rgba(255,255,255,0.3)" font-size="8" font-family="monospace">INT'L TRANSACTIONS</text><text x="590" y="95" fill="#20c997" font-size="36" font-family="sans-serif" font-weight="bold">30%</text><text x="590" y="112" fill="rgba(240,201,110,0.5)" font-size="8" font-family="monospace">↑ international success rate</text><rect x="10" y="130" width="580" height="160" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><text x="22" y="150" fill="rgba(255,255,255,0.3)" font-size="9" font-family="monospace">MONTHLY ACTIVE LEARNERS — TREND</text><line x1="18" y1="272" x2="582" y2="272" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="18" y1="245" x2="582" y2="245" stroke="rgba(255,255,255,0.03)" stroke-width="1"/><line x1="18" y1="218" x2="582" y2="218" stroke="rgba(255,255,255,0.03)" stroke-width="1"/><line x1="18" y1="191" x2="582" y2="191" stroke="rgba(255,255,255,0.03)" stroke-width="1"/><line x1="18" y1="164" x2="582" y2="164" stroke="rgba(255,255,255,0.03)" stroke-width="1"/><rect x="30" y="244" width="38" height="28" fill="rgba(13,115,119,0.25)"/><rect x="86" y="232" width="38" height="40" fill="rgba(13,115,119,0.35)"/><rect x="142" y="218" width="38" height="54" fill="rgba(13,115,119,0.45)"/><rect x="198" y="205" width="38" height="67" fill="rgba(13,115,119,0.55)"/><rect x="254" y="195" width="38" height="77" fill="rgba(13,115,119,0.65)"/><rect x="310" y="200" width="38" height="72" fill="rgba(13,115,119,0.6)"/><rect x="366" y="188" width="38" height="84" fill="rgba(13,115,119,0.72)"/><rect x="422" y="192" width="38" height="80" fill="rgba(13,115,119,0.7)"/><rect x="478" y="178" width="38" height="94" fill="rgba(62,207,142,0.75)"/><rect x="534" y="182" width="38" height="90" fill="rgba(62,207,142,0.6)"/><text x="49" y="284" fill="rgba(255,255,255,0.2)" font-size="7.5" text-anchor="middle" font-family="monospace">Apr</text><text x="105" y="284" fill="rgba(255,255,255,0.2)" font-size="7.5" text-anchor="middle" font-family="monospace">May</text><text x="161" y="284" fill="rgba(255,255,255,0.2)" font-size="7.5" text-anchor="middle" font-family="monospace">Jun</text><text x="217" y="284" fill="rgba(255,255,255,0.2)" font-size="7.5" text-anchor="middle" font-family="monospace">Jul</text><text x="273" y="284" fill="rgba(255,255,255,0.2)" font-size="7.5" text-anchor="middle" font-family="monospace">Aug</text><text x="329" y="284" fill="rgba(255,255,255,0.2)" font-size="7.5" text-anchor="middle" font-family="monospace">Sep</text><text x="385" y="284" fill="rgba(255,255,255,0.2)" font-size="7.5" text-anchor="middle" font-family="monospace">Oct</text><text x="441" y="284" fill="rgba(255,255,255,0.2)" font-size="7.5" text-anchor="middle" font-family="monospace">Nov</text><text x="497" y="284" fill="rgba(62,207,142,0.5)" font-size="7.5" text-anchor="middle" font-family="monospace">Dec</text><text x="553" y="284" fill="rgba(62,207,142,0.5)" font-size="7.5" text-anchor="middle" font-family="monospace">Jan</text><rect x="600" y="130" width="190" height="160" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><text x="612" y="150" fill="rgba(255,255,255,0.3)" font-size="9" font-family="monospace">PLATFORM HEALTH</text><text x="612" y="175" fill="rgba(255,255,255,0.2)" font-size="8" font-family="monospace">Uptime</text><text x="612" y="190" fill="#3ecf8e" font-size="14" font-family="monospace" font-weight="bold">99.2% ✓</text><text x="612" y="210" fill="rgba(255,255,255,0.2)" font-size="8" font-family="monospace">Page Load Speed</text><text x="612" y="225" fill="#14a085" font-size="14" font-family="monospace" font-weight="bold">2.4s avg</text><text x="612" y="245" fill="rgba(255,255,255,0.2)" font-size="8" font-family="monospace">AI Recommendation</text><text x="612" y="260" fill="#5b8aff" font-size="14" font-family="monospace" font-weight="bold">82% sat.</text><text x="612" y="278" fill="rgba(255,255,255,0.2)" font-size="8" font-family="monospace">Course Completion</text><text x="612" y="293" fill="#20c997" font-size="14" font-family="monospace" font-weight="bold">63% rate</text><rect x="10" y="302" width="780" height="62" rx="2" fill="#1a1a26" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><text x="22" y="320" fill="rgba(255,255,255,0.3)" font-size="9" font-family="monospace">KPI TARGETS vs ACTUALS (PRD v1.4)</text><text x="22" y="340" fill="rgba(255,255,255,0.2)" font-size="8" font-family="monospace">Experts: Target 500</text><text x="22" y="354" fill="#3ecf8e" font-size="8" font-family="monospace">Actual: 487 ↑</text><text x="160" y="340" fill="rgba(255,255,255,0.2)" font-size="8" font-family="monospace">Learners: Target 3,000</text><text x="160" y="354" fill="#14a085" font-size="8" font-family="monospace">Actual: 2,840 ↑</text><text x="320" y="340" fill="rgba(255,255,255,0.2)" font-size="8" font-family="monospace">Revenue: Target £200K Q4</text><text x="320" y="354" fill="#5b8aff" font-size="8" font-family="monospace">On track ↑</text><text x="490" y="340" fill="rgba(255,255,255,0.2)" font-size="8" font-family="monospace">Mentorship Bookings: 500+</text><text x="490" y="354" fill="#3ecf8e" font-size="8" font-family="monospace">Achieved ✓</text><text x="660" y="340" fill="rgba(255,255,255,0.2)" font-size="8" font-family="monospace">Expert Retention: 75%</text><text x="660" y="354" fill="#14a085" font-size="8" font-family="monospace">73% — close ↑</text><rect x="10" y="376" width="780" height="32" rx="2" fill="rgba(62,207,142,0.04)" stroke="rgba(62,207,142,0.12)" stroke-width="1"/><text x="22" y="396" fill="rgba(62,207,142,0.6)" font-size="8" font-family="monospace">✓ 3 major UAT releases delivered on time · 100% deployment sign-off · Scheduling errors ↓40% · Int'l transactions ↑30%</text></svg></div></div></div>
+
+<div class="lightbox" id="lb-prd"><div class="lb-inner"><div class="lb-header"><div class="lb-title">Product Requirements Document — Pather v1.4</div><button class="lb-close" onclick="closeLightbox('lb-prd')">✕</button></div><div class="lb-body"><p style="color:var(--muted);font-size:0.88rem;line-height:1.8;margin-bottom:1.5rem;">Pather PRD v1.4 (Feb 2025) authored by Adeoluwa Bamidele (PM), Ololade Olumuyiwa-Biala and Jimoh. Covers product vision, key objectives, platform assumptions, success metrics, feature specifications for 4 apps and 20+ MVP initiatives from April 2024 through Q2 2025.</p><div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;"><div style="background:var(--bg);border:1px solid var(--border);padding:1.2rem;"><div style="font-size:0.68rem;color:#0d7377;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.7rem;">Key Objectives</div><div style="font-size:0.82rem;color:var(--muted);line-height:1.7;">· Adaptive AI learning personalisation<br/>· Expert content creation tools<br/>· Global localisation support<br/>· Payment processing & wallet management<br/>· Community-driven learning experience</div></div><div style="background:var(--bg);border:1px solid var(--border);padding:1.2rem;"><div style="font-size:0.68rem;color:#0d7377;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.7rem;">KPI Targets</div><div style="font-size:0.82rem;color:var(--muted);line-height:1.7;">· 500 experts signed up by Q1<br/>· 3,000 learners by Q1<br/>· £200,000 revenue by Q4 2025<br/>· 99%+ platform uptime<br/>· 80% AI recommendation satisfaction<br/>· 60% course completion rate</div></div></div></div></div></div>
+
+<div class="lightbox" id="lb-stories"><div class="lb-inner"><div class="lb-header"><div class="lb-title">User Stories & Acceptance Criteria — Azure DevOps</div><button class="lb-close" onclick="closeLightbox('lb-stories')">✕</button></div><div class="lb-body"><p style="color:var(--muted);font-size:0.88rem;line-height:1.8;margin-bottom:1.5rem;">Structured user stories authored in Azure DevOps — covering both happy and unhappy paths with clear acceptance criteria. Directly contributed to an 18% reduction in post-release defects across 3 major Pather releases.</p><div style="font-size:0.68rem;color:#0d7377;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;">Sample Unhappy Path Coverage</div><div style="display:flex;flex-direction:column;gap:0.7rem;"><div style="background:var(--bg);border:1px solid rgba(255,107,107,0.2);padding:1rem;font-size:0.82rem;color:var(--muted);">❌ <strong style="color:var(--text)">Verification email not received</strong> → Show resend option after 60s. If link expired, display error with fresh send option.</div><div style="background:var(--bg);border:1px solid rgba(255,107,107,0.2);padding:1rem;font-size:0.82rem;color:var(--muted);">❌ <strong style="color:var(--text)">Session expired mid-onboarding</strong> → Auto sign-in triggered, progress preserved, no data loss.</div><div style="background:var(--bg);border:1px solid rgba(255,107,107,0.2);padding:1rem;font-size:0.82rem;color:var(--muted);">❌ <strong style="color:var(--text)">User skips onboarding</strong> → AI recommendations use platform defaults until profile completed. Full access granted immediately.</div><div style="background:var(--bg);border:1px solid rgba(255,107,107,0.2);padding:1rem;font-size:0.82rem;color:var(--muted);">❌ <strong style="color:var(--text)">Invalid timezone selected</strong> → Fallback to UTC with clear prompt to update. DST changes handled automatically.</div></div></div></div></div>
+
+<div class="lightbox" id="lb-roadmap"><div class="lb-inner"><div class="lb-header"><div class="lb-title">Product Roadmap — Pather 2024–2025</div><button class="lb-close" onclick="closeLightbox('lb-roadmap')">✕</button></div><div class="lb-body"><p style="color:var(--muted);font-size:0.88rem;line-height:1.8;margin-bottom:1.5rem;">20+ MVP initiatives managed across Expert, Learner, Admin and Website apps from Q2 2024 through Q2 2025. Aligned to commercial KPIs from PRD v1.4.</p></div></div></div>
+
+<div class="lightbox" id="lb-brd"><div class="lb-inner"><div class="lb-header"><div class="lb-title">Business Requirements Document — VentureReg</div><button class="lb-close" onclick="closeLightbox('lb-brd')">✕</button></div><div class="lb-body"><p style="color:var(--muted);font-size:0.88rem;line-height:1.8;margin-bottom:1.5rem;">Structured BRD for VentureReg capturing functional and non-functional requirements across compliance onboarding workflows — with full traceability matrices and audit-readiness documentation. Contributed to 45% reduction in manual review effort and 100% audit-ready traceability.</p></div></div></div>
+
+<div class="lightbox" id="lb-uat"><div class="lb-inner"><div class="lb-header"><div class="lb-title">UAT Plan & Test Tracker</div><button class="lb-close" onclick="closeLightbox('lb-uat')">✕</button></div><div class="lb-body"><p style="color:var(--muted);font-size:0.88rem;line-height:1.8;margin-bottom:1.5rem;">Coordinated UAT cycles across 3 major Pather releases and VentureReg compliance workflows. Managed stakeholder testing, defect triage and resolution, achieving 100% on-time deployment sign-off.</p></div></div></div>
+
+<div class="lightbox" id="lb-bc"><div class="lb-inner"><div class="lb-header"><div class="lb-title">Business Case & Gap Analysis — Extreme Manufacturing</div><button class="lb-close" onclick="closeLightbox('lb-bc')">✕</button></div><div class="lb-body"><p style="color:var(--muted);font-size:0.88rem;line-height:1.8;margin-bottom:1.5rem;">Gap analysis and cost-benefit assessment supporting capital investment decisions at Extreme Manufacturing. Identified process inefficiencies across quality control and incident reporting, contributing to 15% reduction in non-conformances and 32% fewer reportable incidents.</p></div></div></div>
+
+<script>
+
+// Collapsible achievements
+function toggleAch(id, header) {
+  const panel = document.getElementById(id);
+  const btn = header.querySelector('.ach-toggle-btn');
+  const isOpen = panel.classList.contains('open');
+  panel.classList.toggle('open', !isOpen);
+  if(btn) btn.classList.toggle('open', !isOpen);
+}
+// Nav scroll shrink
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60);
+});
+
+// Mobile menu
+function toggleMenu(){
+  document.getElementById('navLinks').classList.toggle('open');
+}
+document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>{
+  document.getElementById('navLinks').classList.remove('open');
+}));
+
+// Reveal on scroll - use low threshold so elements animate in reliably
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Also run immediately for elements already in view
+window.addEventListener('load', () => {
+  // Trigger reveals in view
+  document.querySelectorAll('.reveal').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      el.classList.add('visible');
+    }
+  });
+  // Also trigger all reveals inside the active tab panel immediately
+  document.querySelectorAll('.tab-panel.active .reveal').forEach(el => {
+    el.classList.add('visible');
+  });
+});
+
+// Tabs
+function switchTab(i){
+  document.querySelectorAll('.tab-btn').forEach((b,j)=>b.classList.toggle('active',i===j));
+  document.querySelectorAll('.tab-panel').forEach((p,j)=>{
+    p.classList.toggle('active',i===j);
+    if(i===j){
+      // Trigger reveal for all .reveal elements inside this tab
+      p.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+    }
+  });
+}
+
+// Lightbox
+function openLightbox(id){
+  document.getElementById(id).classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLightbox(id){
+  document.getElementById(id).classList.remove('open');
+  document.body.style.overflow='';
+}
+document.querySelectorAll('.lightbox').forEach(lb=>{
+  lb.addEventListener('click',function(e){
+    if(e.target===this) closeLightbox(this.id);
+  });
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape') document.querySelectorAll('.lightbox.open').forEach(lb=>closeLightbox(lb.id));
+});
+</script>
+</body>
+</html>
